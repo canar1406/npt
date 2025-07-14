@@ -1,0 +1,74 @@
+mathematics:
+  label: Toán học
+  permalink: /mathematics
+  description: Các bài viết về toán học tổng quát
+
+algebra:
+  label: Đại số
+  permalink: /algebra
+  description: Các chủ đề về đại số
+
+geometry:
+  label: Hình học
+  permalink: /geometry
+  description: Các chủ đề về hình học
+
+calculus:
+  label: Giải tích
+  permalink: /calculus
+  description: Các chủ đề về giải tích
+
+applied-math:
+  label: Toán ứng dụng
+  permalink: /applied-math
+  description: Toán học trong thực tế
+
+research:
+  label: Nghiên cứu
+  permalink: /research
+  description: Các nghiên cứu học thuật
+
+tutorial:
+  label: Hướng dẫn
+  permalink: /tutorial
+  description: Hướng dẫn học toán
+
+euler:
+  label: Euler
+  permalink: /euler
+  description: Về nhà toán học Euler
+
+fibonacci:
+  label: Fibonacci
+  permalink: /fibonacci
+  description: Về dãy Fibonacci
+
+golden-ratio:
+  label: Tỷ lệ vàng
+  permalink: /golden-ratio
+  description: Về tỷ lệ vàng
+
+artificial-intelligence:
+  label: AI
+  permalink: /artificial-intelligence
+  description: Trí tuệ nhân tạo
+
+machine-learning:
+  label: Machine Learning
+  permalink: /machine-learning
+  description: Học máy
+
+complex-analysis:
+  label: Giải tích phức
+  permalink: /complex-analysis
+  description: Giải tích phức
+
+nature:
+  label: Tự nhiên
+  permalink: /nature
+  description: Toán học trong tự nhiên
+
+future:
+  label: Tương lai
+  permalink: /future
+  description: Tương lai của toán học

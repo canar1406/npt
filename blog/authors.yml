@@ -1,0 +1,23 @@
+math-team:
+  name: Đội ngũ Toán Học
+  title: Nhóm tác giả chuyên về toán học
+  url: https://github.com/math-academy
+  image_url: https://github.com/math-academy.png
+
+euler-fan:
+  name: Nguyễn Văn Euler
+  title: Nghiên cứu sinh Giải tích
+  url: https://github.com/euler-fan
+  image_url: https://github.com/euler-fan.png
+
+gauss-lover:
+  name: Trần Thị Gauss
+  title: Tiến sĩ Đại số
+  url: https://github.com/gauss-lover
+  image_url: https://github.com/gauss-lover.png
+
+newton-researcher:
+  name: Lê Minh Newton
+  title: Giáo sư Giải tích
+  url: https://github.com/newton-researcher
+  image_url: https://github.com/newton-researcher.png
