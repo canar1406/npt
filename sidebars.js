@@ -22,30 +22,29 @@ const sidebars = {
       type: 'category',
       label: 'Đại Số',
       items: [
-        'algebra/index',
-        'algebra/linear-algebra',
+        'dai-so/index',
+        'dai-so/dai-so-tuyen-tinh',
       ],
     },
     {
       type: 'category',
       label: 'Giải Tích',
       items: [
-        'calculus/index',
-        'calculus/limits',
+        'giai-tich/index',
       ],
     },
     {
       type: 'category',
       label: 'Hình Học',
       items: [
-        'geometry/index',
+        'hinh-hoc/index',
       ],
     },
     {
       type: 'category',
-      label: 'Xác Suất & Thống Kê',
+      label: 'Toán Ứng Dụng',
       items: [
-        'statistics/index',
+        'toan-ung-dung/index',
       ],
     },
   ],

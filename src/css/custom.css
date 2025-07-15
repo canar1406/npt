@@ -202,6 +202,188 @@ html {
   .navbar-sidebar__backdrop {
     transition: opacity 0.3s ease-in-out;
   }
+  
+  /* Fix mobile menu height and z-index issues */
+  .navbar-sidebar__brand {
+    height: auto;
+    min-height: 60px;
+  }
+  
+  .navbar-sidebar__items {
+    height: calc(100vh - 60px);
+    overflow-y: auto;
+    padding-bottom: 20px;
+  }
+  
+  .navbar-sidebar__item {
+    padding: 8px 16px;
+  }
+  
+  /* Hamburger menu toggle with smooth animation */
+  .navbar__toggle {
+    z-index: 1000;
+    background: none;
+    border: none;
+    color: var(--ifm-navbar-link-color);
+    cursor: pointer;
+    padding: 8px;
+    margin-left: 8px;
+    transition: all 0.3s ease-in-out;
+    opacity: 1;
+    transform: scale(1);
+  }
+  
+  /* Ẩn hamburger khi menu mở */
+  .navbar-sidebar--show .navbar__toggle {
+    opacity: 0;
+    transform: scale(0.8);
+    pointer-events: none;
+  }
+  
+  /* Hiệu ứng mượt mà cho menu sidebar - an toàn */
+  .navbar-sidebar {
+    max-height: 100vh;
+    overflow-y: auto;
+    z-index: 999;
+    transform: translateX(-100%);
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  /* Menu hiện ra */
+  .navbar-sidebar--show .navbar-sidebar {
+    transform: translateX(0);
+  }
+  
+  /* Fix menu backdrop - an toàn */
+  .navbar-sidebar__backdrop {
+    z-index: 998;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+  }
+  
+  .navbar-sidebar--show .navbar-sidebar__backdrop {
+    opacity: 1;
+  }
+  
+  /* Better spacing for menu items */
+  .navbar-sidebar .menu__link {
+    padding: 12px 16px;
+    border-radius: 8px;
+    margin: 4px 8px;
+  }
+  
+  /* Fix search bar in mobile menu */
+  .navbar-sidebar .DocSearch {
+    margin: 16px;
+  }
+  
+  /* Ensure dark mode toggle is visible */
+  .navbar-sidebar .navbar__item {
+    display: flex;
+    align-items: center;
+    padding: 8px 16px;
+  }
+}
+
+/* Additional mobile fixes */
+@media (max-width: 768px) {
+  /* Better mobile navbar */
+  .navbar {
+    padding: 0 16px;
+    position: relative;
+  }
+  
+  .navbar__brand {
+    flex: 1;
+  }
+  
+  /* Hamburger toggle với hiệu ứng mượt mà */
+  .navbar__toggle {
+    background: none;
+    border: none;
+    color: var(--ifm-navbar-link-color);
+    cursor: pointer;
+    padding: 8px;
+    margin-left: 8px;
+    transition: all 0.3s ease-in-out;
+    position: relative;
+    z-index: 1001;
+  }
+  
+  /* Hiệu ứng hover cho hamburger */
+  .navbar__toggle:hover {
+    background: rgba(var(--ifm-color-primary-rgb), 0.1);
+    border-radius: 8px;
+    transform: scale(1.05);
+  }
+  
+  /* Fix mobile menu container với hiệu ứng mượt mà */
+  .navbar-sidebar__brand {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px;
+    border-bottom: 1px solid var(--ifm-color-emphasis-200);
+  }
+  
+  /* Nút đóng menu với hiệu ứng */
+  .navbar-sidebar__close {
+    background: none;
+    border: none;
+    color: var(--ifm-navbar-link-color);
+    cursor: pointer;
+    padding: 8px;
+    transition: all 0.3s ease-in-out;
+    border-radius: 8px;
+    opacity: 0;
+    transform: scale(0.8);
+  }
+  
+  /* Hiện nút đóng khi menu mở */
+  .navbar-sidebar--show .navbar-sidebar__close {
+    opacity: 1;
+    transform: scale(1);
+  }
+  
+  /* Hiệu ứng hover cho nút đóng */
+  .navbar-sidebar__close:hover {
+    background: rgba(var(--ifm-color-primary-rgb), 0.1);
+    transform: scale(1.05);
+  }
+  
+  /* Ensure menu items are clickable */
+  .navbar-sidebar .menu__list-item {
+    margin: 0;
+  }
+  
+  .navbar-sidebar .menu__link {
+    display: block;
+    padding: 12px 16px;
+    color: var(--ifm-navbar-link-color);
+    text-decoration: none;
+    border-radius: 8px;
+    margin: 4px 8px;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .navbar-sidebar .menu__link:hover {
+    background: var(--ifm-color-emphasis-100);
+    transform: translateX(5px);
+  }
+  
+  /* Fix for viewport height on mobile */
+  .navbar-sidebar {
+    height: 100vh;
+    height: 100dvh; /* Dynamic viewport height for mobile browsers */
+  }
+  
+  .navbar-sidebar__items {
+    height: calc(100vh - 80px);
+    height: calc(100dvh - 80px);
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+    transition: all 0.3s ease-in-out;
+  }
 }
 
 /* Content slide-in animations */
@@ -247,6 +429,70 @@ html {
 
 .feature:nth-child(3) {
   animation: fadeIn 0.6s ease-out 0.5s both;
+}
+
+/* Loại bỏ hiệu ứng staggered phức tạp - giữ menu đơn giản */
+.navbar-sidebar .menu__list-item {
+  transition: all 0.3s ease-in-out;
+}
+
+/* Hiệu ứng pulse cho hamburger khi focus */
+.navbar__toggle:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(var(--ifm-color-primary-rgb), 0.3);
+  border-radius: 8px;
+}
+
+/* Hiệu ứng ripple khi click hamburger */
+.navbar__toggle::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 0;
+  height: 0;
+  background: rgba(var(--ifm-color-primary-rgb), 0.3);
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  transition: width 0.3s ease-in-out, height 0.3s ease-in-out;
+  pointer-events: none;
+}
+
+.navbar__toggle:active::after {
+  width: 40px;
+  height: 40px;
+}
+
+/* Hiệu ứng backdrop đơn giản */
+.navbar-sidebar__backdrop {
+  transition: opacity 0.3s ease-in-out;
+}
+
+.navbar-sidebar--show .navbar-sidebar__backdrop {
+  opacity: 1;
+}
+
+/* Cải thiện hiệu ứng slide cho menu - an toàn */
+.navbar-sidebar {
+  transition: transform 0.3s ease-in-out;
+}
+
+.navbar-sidebar--show .navbar-sidebar {
+  transform: translateX(0);
+}
+
+/* Hiệu ứng cho brand logo trong sidebar - đơn giản */
+.navbar-sidebar__brand {
+  transition: all 0.3s ease-in-out;
+}
+
+/* Hiệu ứng đơn giản cho hamburger và close button */
+.navbar__toggle {
+  transition: all 0.3s ease-in-out;
+}
+
+.navbar-sidebar__close {
+  transition: all 0.3s ease-in-out;
 }
 
 /* Improve perceived performance */

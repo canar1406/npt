@@ -77,43 +77,21 @@ const config = {
     ],
   ],
 
+  // Thêm plugin và theme tùy chỉnh
+
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       // Replace with your project's social card
       image: 'img/docusaurus-social-card.jpg',
-      // Algolia search configuration
+      // Algolia search
       algolia: {
-        // The application ID provided by Algolia
-        appId: 'BH4D9OD16A',
-        
-        // Public API key: it is safe to commit it
-        apiKey: 'ac317234e6a42074175369b2f42e9296',
-        
+        appId: 'IWKUXCUYNB',
+        apiKey: '658663484ce56914c8d325de361927bc',
         indexName: 'math-docs',
-        
-        // Optional: see doc section below
         contextualSearch: true,
-        
-        // Optional: Specify domains where the navigation should occur through window.location instead on history.push
-        externalUrlRegex: 'external\\.com|domain\\.com',
-        
-        // Optional: Replace parts of the item URLs from Algolia. Useful when using the same search index for multiple deployments using a different baseUrl
-        replaceSearchResultPathname: {
-          from: '/docs/', // or as RegExp: /\/docs\//
-          to: '/',
-        },
-        
-        // Optional: Algolia search parameters
         searchParameters: {},
-        
-        // Optional: path for search page that enabled by default (`false` to disable it)
-        searchPagePath: 'search',
-        
-        // Optional: whether the insights feature is enabled or not on Docsearch
-        insights: false,
-        
-        //... other Algolia params
+        debug: false
       },
       navbar: {
         logo: {
@@ -174,7 +152,7 @@ const config = {
               },
               {
                 label: 'About me',
-                href: 'https://the-bithub.com/NPT',
+                href: '/about',
               },
             ],
           },
