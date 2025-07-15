@@ -101,7 +101,7 @@ const config = {
       // Docs sidebar configuration
       docs: {
         sidebar: {
-          hideable: true,
+          hideable: false,
           autoCollapseCategories: true,
         },
       },
