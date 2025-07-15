@@ -22,7 +22,7 @@ const config = {
   },
 
   // Set the production url of your site here
-  url: 'https://npt.com', // Thay bằng domain thật của bạn
+  url: 'https://npt-8f28d1e925ac.herokuapp.com/', // URL Heroku thật
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
   baseUrl: '/',
@@ -78,21 +78,37 @@ const config = {
   ],
 
   // Thêm plugin và theme tùy chỉnh
+  plugins: [
+    [
+      '@easyops-cn/docusaurus-search-local',
+      {
+        hashed: true,
+        language: ['vi'],
+        highlightSearchTermsOnTargetPage: true,
+        removeDefaultStopWordFilter: true,
+        indexBlog: true,
+        indexDocs: true,
+        indexPages: true,
+        docsRouteBasePath: '/docs',
+        blogRouteBasePath: '/blog'
+      }
+    ]
+  ],
 
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       // Replace with your project's social card
       image: 'img/docusaurus-social-card.jpg',
-      // Algolia search
-      algolia: {
-        appId: 'IWKUXCUYNB',
-        apiKey: '658663484ce56914c8d325de361927bc',
-        indexName: 'math-docs',
-        contextualSearch: true,
-        searchParameters: {},
-        debug: false
-      },
+      // Algolia search disabled - using local search
+      // algolia: {
+      //   appId: 'IWKUXCUYNB',
+      //   apiKey: '658663484ce56914c8d325de361927bc',
+      //   indexName: 'math-docs',
+      //   contextualSearch: false,
+      //   searchParameters: {},
+      //   debug: false
+      // },
       navbar: {
         logo: {
           alt: 'Math Academy Logo',
