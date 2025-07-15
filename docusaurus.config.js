@@ -22,7 +22,7 @@ const config = {
   },
 
   // Set the production url of your site here
-  url: 'https://npt-8f28d1e925ac.herokuapp.com/', // URL Heroku thật
+  url: 'https://nptmath.studio', // Custom domain
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
   baseUrl: '/',
