@@ -3,9 +3,7 @@
  * bundles Infima by default. Infima is a CSS framework designed to
  * work well for content-centric websites.
  */
-
 @import url('https://cdn.jsdelivr.net/npm/katex@0.16.0/dist/katex.min.css');
-
 /* You can override the default Infima variables here. */
 :root {
   --ifm-color-primary: #2e8555;
@@ -18,7 +16,6 @@
   --ifm-code-font-size: 95%;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
 }
-
 /* For readability concerns, you should choose a lighter palette in dark mode. */
 [data-theme='dark'] {
   --ifm-color-primary: #25c2a0;
@@ -30,17 +27,14 @@
   --ifm-color-primary-lightest: #4fddbf;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
 }
-
 /* Page transition effects */
 html {
   scroll-behavior: smooth;
 }
-
 /* Main content transition */
 .main-wrapper {
   transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
 }
-
 /* Page fade-in animation */
 @keyframes fadeIn {
   from {
@@ -52,32 +46,26 @@ html {
     transform: translateY(0);
   }
 }
-
 /* Apply fade-in to main content */
 main {
   animation: fadeIn 0.5s ease-in-out;
 }
-
 /* Smooth transitions for all links */
 a {
   transition: all 0.3s ease-in-out;
 }
-
 /* Navbar transitions */
 .navbar {
   transition: all 0.3s ease-in-out;
   backdrop-filter: blur(10px);
 }
-
 .navbar__item {
   transition: all 0.3s ease-in-out;
 }
-
 .navbar__link {
   transition: all 0.3s ease-in-out;
   position: relative;
 }
-
 .navbar__link::after {
   content: '';
   position: absolute;
@@ -89,34 +77,28 @@ a {
   transition: all 0.3s ease-in-out;
   transform: translateX(-50%);
 }
-
 .navbar__link:hover::after,
 .navbar__link--active::after {
   width: 100%;
 }
-
 /* Content transitions */
 .container {
   transition: all 0.3s ease-in-out;
 }
-
 /* Card and section transitions */
 .card {
   transition: all 0.3s ease-in-out;
 }
-
 .card:hover {
   transform: translateY(-5px);
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
 }
-
 /* Button transitions */
 .button {
   transition: all 0.3s ease-in-out;
   position: relative;
   overflow: hidden;
 }
-
 .button::before {
   content: '';
   position: absolute;
@@ -127,41 +109,33 @@ a {
   background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
   transition: left 0.5s;
 }
-
 .button:hover::before {
   left: 100%;
 }
-
 /* Sidebar transitions */
 .menu {
   transition: all 0.3s ease-in-out;
 }
-
 .menu__link {
   transition: all 0.3s ease-in-out;
   border-radius: 8px;
   margin: 2px 0;
 }
-
 .menu__link:hover {
   background: rgba(var(--ifm-color-primary-rgb), 0.1);
   transform: translateX(5px);
 }
-
 /* Footer transitions */
 .footer {
   transition: all 0.3s ease-in-out;
 }
-
 .footer__link-item {
   transition: all 0.3s ease-in-out;
 }
-
 .footer__link-item:hover {
   transform: translateX(5px);
   color: var(--ifm-color-primary);
 }
-
 /* Page loading animation */
 .loading-bar {
   position: fixed;
@@ -173,7 +147,6 @@ a {
   z-index: 9999;
   animation: loadingBar 1s ease-in-out;
 }
-
 @keyframes loadingBar {
   0% {
     transform: translateX(-100%);
@@ -182,43 +155,40 @@ a {
     transform: translateX(100%);
   }
 }
-
 /* Smooth scrolling for internal links */
 html {
   scroll-behavior: smooth;
 }
-
 /* Prevent flash of unstyled content */
 .theme-doc-sidebar-container {
   transition: transform 0.3s ease-in-out;
 }
-
 /* Mobile responsive transitions */
 @media (max-width: 996px) {
   .navbar-sidebar {
     transition: transform 0.3s ease-in-out;
   }
-  
+
   .navbar-sidebar__backdrop {
     transition: opacity 0.3s ease-in-out;
   }
-  
+
   /* Fix mobile menu height and z-index issues */
   .navbar-sidebar__brand {
     height: auto;
     min-height: 60px;
   }
-  
+
   .navbar-sidebar__items {
     height: calc(100vh - 60px);
-    overflow-y: auto;
+    /* overflow-y: auto; <-- DÒNG NÀY ĐÃ XÓA THEO PHÁT HIỆN CỦA BẠN */
     padding-bottom: 20px;
   }
-  
+
   .navbar-sidebar__item {
     padding: 8px 16px;
   }
-  
+
   /* Hamburger menu toggle with smooth animation */
   .navbar__toggle {
     z-index: 1000;
@@ -232,51 +202,51 @@ html {
     opacity: 1;
     transform: scale(1);
   }
-  
+
   /* Ẩn hamburger khi menu mở */
   .navbar-sidebar--show .navbar__toggle {
     opacity: 0;
     transform: scale(0.8);
     pointer-events: none;
   }
-  
+
   /* Hiệu ứng mượt mà cho menu sidebar - an toàn */
   .navbar-sidebar {
     max-height: 100vh;
-    overflow-y: auto;
+    /* overflow-y: auto; <-- DÒNG NÀY CŨNG ĐÃ XÓA */
     z-index: 999;
     transform: translateX(-100%);
     transition: transform 0.3s ease-in-out;
   }
-  
+
   /* Menu hiện ra */
   .navbar-sidebar--show .navbar-sidebar {
     transform: translateX(0);
   }
-  
+
   /* Fix menu backdrop - an toàn */
   .navbar-sidebar__backdrop {
     z-index: 998;
     opacity: 0;
     transition: opacity 0.3s ease-in-out;
   }
-  
+
   .navbar-sidebar--show .navbar-sidebar__backdrop {
     opacity: 1;
   }
-  
+
   /* Better spacing for menu items */
   .navbar-sidebar .menu__link {
     padding: 12px 16px;
     border-radius: 8px;
     margin: 4px 8px;
   }
-  
+
   /* Fix search bar in mobile menu */
   .navbar-sidebar .DocSearch {
     margin: 16px;
   }
-  
+
   /* Ensure dark mode toggle is visible */
   .navbar-sidebar .navbar__item {
     display: flex;
@@ -284,7 +254,6 @@ html {
     padding: 8px 16px;
   }
 }
-
 /* Additional mobile fixes */
 @media (max-width: 768px) {
   /* Better mobile navbar */
@@ -292,11 +261,11 @@ html {
     padding: 0 16px;
     position: relative;
   }
-  
+
   .navbar__brand {
     flex: 1;
   }
-  
+
   /* Hamburger toggle với hiệu ứng mượt mà */
   .navbar__toggle {
     background: none;
@@ -309,14 +278,14 @@ html {
     position: relative;
     z-index: 1001;
   }
-  
+
   /* Hiệu ứng hover cho hamburger */
   .navbar__toggle:hover {
     background: rgba(var(--ifm-color-primary-rgb), 0.1);
     border-radius: 8px;
     transform: scale(1.05);
   }
-  
+
   /* Fix mobile menu container với hiệu ứng mượt mà */
   .navbar-sidebar__brand {
     display: flex;
@@ -325,7 +294,7 @@ html {
     padding: 16px;
     border-bottom: 1px solid var(--ifm-color-emphasis-200);
   }
-  
+
   /* Nút đóng menu với hiệu ứng */
   .navbar-sidebar__close {
     background: none;
@@ -338,24 +307,24 @@ html {
     opacity: 0;
     transform: scale(0.8);
   }
-  
+
   /* Hiện nút đóng khi menu mở */
   .navbar-sidebar--show .navbar-sidebar__close {
     opacity: 1;
     transform: scale(1);
   }
-  
+
   /* Hiệu ứng hover cho nút đóng */
   .navbar-sidebar__close:hover {
     background: rgba(var(--ifm-color-primary-rgb), 0.1);
     transform: scale(1.05);
   }
-  
+
   /* Ensure menu items are clickable */
   .navbar-sidebar .menu__list-item {
     margin: 0;
   }
-  
+
   .navbar-sidebar .menu__link {
     display: block;
     padding: 12px 16px;
@@ -365,27 +334,26 @@ html {
     margin: 4px 8px;
     transition: all 0.3s ease-in-out;
   }
-  
+
   .navbar-sidebar .menu__link:hover {
     background: var(--ifm-color-emphasis-100);
     transform: translateX(5px);
   }
-  
+
   /* Fix for viewport height on mobile */
   .navbar-sidebar {
     height: 100vh;
     height: 100dvh; /* Dynamic viewport height for mobile browsers */
   }
-  
+
   .navbar-sidebar__items {
     height: calc(100vh - 80px);
     height: calc(100dvh - 80px);
-    overflow-y: auto;
+    /* overflow-y: auto; <-- DÒNG NÀY CŨNG ĐÃ XÓA */
     -webkit-overflow-scrolling: touch;
     transition: all 0.3s ease-in-out;
   }
 }
-
 /* Content slide-in animations */
 @keyframes slideInFromLeft {
   from {
@@ -397,7 +365,6 @@ html {
     transform: translateX(0);
   }
 }
-
 @keyframes slideInFromRight {
   from {
     opacity: 0;
@@ -408,41 +375,33 @@ html {
     transform: translateX(0);
   }
 }
-
 /* Apply slide-in to different sections */
 .hero {
   animation: slideInFromLeft 0.6s ease-out;
 }
-
 .features {
   animation: slideInFromRight 0.6s ease-out 0.2s both;
 }
-
 /* Staggered animation for feature items */
 .feature:nth-child(1) {
   animation: fadeIn 0.6s ease-out 0.3s both;
 }
-
 .feature:nth-child(2) {
   animation: fadeIn 0.6s ease-out 0.4s both;
 }
-
 .feature:nth-child(3) {
   animation: fadeIn 0.6s ease-out 0.5s both;
 }
-
 /* Loại bỏ hiệu ứng staggered phức tạp - giữ menu đơn giản */
 .navbar-sidebar .menu__list-item {
   transition: all 0.3s ease-in-out;
 }
-
 /* Hiệu ứng pulse cho hamburger khi focus */
 .navbar__toggle:focus {
   outline: none;
   box-shadow: 0 0 0 2px rgba(var(--ifm-color-primary-rgb), 0.3);
   border-radius: 8px;
 }
-
 /* Hiệu ứng ripple khi click hamburger */
 .navbar__toggle::after {
   content: '';
@@ -457,50 +416,40 @@ html {
   transition: width 0.3s ease-in-out, height 0.3s ease-in-out;
   pointer-events: none;
 }
-
 .navbar__toggle:active::after {
   width: 40px;
   height: 40px;
 }
-
 /* Hiệu ứng backdrop đơn giản */
 .navbar-sidebar__backdrop {
   transition: opacity 0.3s ease-in-out;
 }
-
 .navbar-sidebar--show .navbar-sidebar__backdrop {
   opacity: 1;
 }
-
 /* Cải thiện hiệu ứng slide cho menu - an toàn */
 .navbar-sidebar {
   transition: transform 0.3s ease-in-out;
 }
-
 .navbar-sidebar--show .navbar-sidebar {
   transform: translateX(0);
 }
-
 /* Hiệu ứng cho brand logo trong sidebar - đơn giản */
 .navbar-sidebar__brand {
   transition: all 0.3s ease-in-out;
 }
-
 /* Hiệu ứng đơn giản cho hamburger và close button */
 .navbar__toggle {
   transition: all 0.3s ease-in-out;
 }
-
 .navbar-sidebar__close {
   transition: all 0.3s ease-in-out;
 }
-
 /* Improve perceived performance */
 * {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-
 /* Reduce motion for users who prefer it */
 @media (prefers-reduced-motion: reduce) {
   *,
@@ -510,8 +459,49 @@ html {
     animation-iteration-count: 1 !important;
     transition-duration: 0.01ms !important;
   }
-  
+
   html {
     scroll-behavior: auto;
   }
+}
+
+/* Custom styling for navbar sidebar panel */
+.theme-layout-navbar-sidebar-panel.navbar-sidebar__item.menu {
+  padding-top: 20px;
+  padding-left: 16px;
+  padding-right: 16px;
+  transform: translateX(-10px);
+}
+
+
+
+.theme-layout-navbar-sidebar-panel .menu__link {
+  padding: 10px 12px;
+
+  text-decoration: none;
+  transition: all 0.3s ease-in-out;
+  display: block;
+}
+
+.theme-layout-navbar-sidebar-panel .menu__link:hover {
+
+  transform: translateX(5px);
+}
+
+.theme-layout-navbar-sidebar-panel .menu__link--active {
+
+  font-weight: 600;
+}
+
+/* Style for category labels */
+.theme-layout-navbar-sidebar-panel .menu__link--sublist {
+  font-weight: 600;
+
+  margin-bottom: 8px;
+}
+
+/* Ensure proper spacing between categories */
+.theme-layout-navbar-sidebar-panel .menu__list-item--collapsed .menu__list {
+
+  padding-left: 16px;
 }
