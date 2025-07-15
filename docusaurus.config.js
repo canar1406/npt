@@ -173,7 +173,7 @@ const config = {
             ],
           },
         ],
-        copyright: `Copyright © 2025 Tiểu sảnh nhỏ xíu của Arust. Built with Heavietnam.`,
+        copyright: `Copyright © 2025 Tiểu sảnh nhỏ xíu của Arust. Built with <a href="https://home.heavietnam.com/" target="_blank">Heavietnam</a>.`,
       },
       prism: {
         theme: prismThemes.github,
