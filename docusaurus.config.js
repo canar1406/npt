@@ -22,15 +22,17 @@ const config = {
   },
 
   // Set the production url of your site here
-  url: 'https://nptmath.studio', // Custom domain
+  url: 'https://canar1406.github.io', // Custom domain
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
-  baseUrl: '/',
+  baseUrl: '/npt/',
+  trailingSlash: false,
+  deploymentBranch: 'gh-pages',
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'math-academy', // Usually your GitHub org/user name.
-  projectName: 'math-docs', // Usually your repo name.
+  organizationName: 'canar1406', // Usually your GitHub org/user name.
+  projectName: 'npt', // Usually your repo name.
 
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
