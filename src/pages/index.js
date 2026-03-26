@@ -15,7 +15,7 @@ function HomepageHeader() {
         <div className={styles.heroContent}>
           <div className={styles.heroLogo}>
             <div className={styles.logoContainer}>
-              <img src="/img/logo.png" alt="Arust Logo" className={styles.logo} />
+              <img src="/npt/img/logo.png" alt="Arust Logo" className={styles.logo} />
             </div>
           </div>
           <Heading as="h1" className={styles.heroTitle}>
