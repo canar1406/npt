@@ -16,7 +16,7 @@ export default function About() {
             <div className={styles.heroContent}>
               <div className={styles.avatarContainer}>
                 <div className={styles.avatarWrapper}>
-                  <img src="/img/logo.png" alt="Arust Avatar" className={styles.avatar} />
+                  <img src="/npt/img/logo.png" alt="Arust Avatar" className={styles.avatar} />
                   <div className={styles.avatarRing}></div>
                 </div>
               </div>
