@@ -1,6 +1,6 @@
 # TỔNG ÔN - CSN - ĐỀ 03
 
-## PHẦN I: CÂU HỎI TRẮC NGHIỆM NHIỀU PHƯƠNG ÁN LỰA CHỌN
+## Phần 1: Câu hỏi trắc nghiệm nhiều lựa chọn
 
 **Câu 1:** Cho hàm số $y=f(x)$ có đạo hàm trên $\mathbb{R}$ thỏa mãn $f'(1)=3$. Khi đó $\displaystyle\lim_{x\to 1}\dfrac{f(x)-f(1)}{1-x}$ bằng
 
@@ -8,6 +8,10 @@
 - B. $3$
 - C. $2$
 - **[Đúng]** D. $-3$
+
+```
+test
+```
 
 > **Lời giải:**
 > Theo định nghĩa đạo hàm tại điểm, ta có $\displaystyle\lim_{x\to 1}\dfrac{f(x)-f(1)}{1-x}=-\displaystyle\lim_{x\to 1}\dfrac{f(x)-f(1)}{x-1}=-f'(1)=-3$.
@@ -32,7 +36,8 @@ Nhóm chứa tứ phân vị thứ nhất là
 ---
 
 **Câu 3:** Trong không gian với hệ tọa độ $Oxyz$, cho hai điểm $A(2;1;-1)$ và $B(1;0;1)$. Đường kính của mặt cầu đi qua hai điểm $A$, $B$ và có tâm thuộc trục $Oy$ là
-- **[Đúng]** A. $2\sqrt{6}$
+
+- **[Đúng]** A. $2\sqrt{6}$ 
 - B. $2\sqrt{2}$
 - C. $4\sqrt{2}$
 - D. $\sqrt{6}$
@@ -261,7 +266,7 @@ Khoảng tứ phân vị của mẫu số liệu ghép nhóm là
 
 ---
 
-## PHẦN II: CÂU HỎI TRẮC NGHIỆM ĐÚNG/SAI
+## Phần 2: Câu hỏi trắc nghiệm đúng sai
 
 **Câu 1:** Cho tích phân $I=\displaystyle\int_{-2}^1\left|4x-1\right|{\rm d}x$.
 - **[Sai]** A. Tích phân $I$ bằng $\displaystyle\int_{-1}^{\frac{1}{4}}(4x-1){\rm d}x+\displaystyle\int_{\frac{1}{4}}^1(4x-1){\rm d}x$

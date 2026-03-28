@@ -1,4 +1,4 @@
-/**
+Ôªø/**
  * Any CSS included here will be global. The classic template
  * bundles Infima by default. Infima is a CSS framework designed to
  * work well for content-centric websites.
@@ -565,7 +565,7 @@ html[data-theme='light'] .theme-doc-markdown h2 {
 }
 
 
-/* T?O –U?NG K? D?C CHO LIST ITEMS TRONG MULTI-LINE TREE LIST */
+/* T?O ÔøΩU?NG K? D?C CHO LIST ITEMS TRONG MULTI-LINE TREE LIST */
 html[data-theme='dark'] .theme-doc-markdown li,
 html[data-theme='light'] .theme-doc-markdown li {
     position: relative;
@@ -598,9 +598,9 @@ html[data-theme='light'] .theme-doc-markdown li::before {
     pointer-events: none;
 }
 
-/* FIX –?C TR?: Khi List Item cÛ ch?a ngo?c vuÙng/ma tr?n (mtable) l‡m d?y line-height lÍn cao
-   -> V? trÌ c?a d?u ch?m (bullet) b? d?y xu?ng du?i Bounding Box.
-   -> KÈo d‡i v˘ng t‡ng hÏnh (transparent) xu?ng 3.8em d? b?o v? d?u ch?m kh?i b? d‚m xuyÍn */
+/* FIX ÔøΩ?C TR?: Khi List Item cÔøΩ ch?a ngo?c vuÔøΩng/ma tr?n (mtable) lÔøΩm d?y line-height lÔøΩn cao
+   -> V? trÔøΩ c?a d?u ch?m (bullet) b? d?y xu?ng du?i Bounding Box.
+   -> KÔøΩo dÔøΩi vÔøΩng tÔøΩng hÔøΩnh (transparent) xu?ng 3.8em d? b?o v? d?u ch?m kh?i b? dÔøΩm xuyÔøΩn */
 html[data-theme='dark'] .theme-doc-markdown li:has(.katex .mtable)::before,
 html[data-theme='light'] .theme-doc-markdown li:has(.katex .mtable)::before {
     background: linear-gradient(
@@ -615,7 +615,7 @@ html[data-theme='light'] .theme-doc-markdown li:has(.katex .mtable)::before {
     ) !important;
 }
 
-/* T?t g?ch d?c ho‡n to‡n v?i c·c list t? d·nh d?u no-line */
+/* T?t g?ch d?c hoÔøΩn toÔøΩn v?i cÔøΩc list t? dÔøΩnh d?u no-line */
 html[data-theme='dark'] .theme-doc-markdown li.no-line::before,
 html[data-theme='light'] .theme-doc-markdown li.no-line::before {
     display: none !important;
@@ -623,12 +623,12 @@ html[data-theme='light'] .theme-doc-markdown li.no-line::before {
 
 
 /* ========================================================
-   T?NG H?P V¡ L?I B?NG V¿ HASH-LINK CHO C? THEME S¡NG/T?I 
-   (Do chuy?n giao theme b? roi r?ng / Docusaurus ghi dË)
+   T?NG H?P VÔøΩ L?I B?NG VÔøΩ HASH-LINK CHO C? THEME SÔøΩNG/T?I 
+   (Do chuy?n giao theme b? roi r?ng / Docusaurus ghi dÔøΩ)
 ======================================================== */
 
-/* 1. S?A L?I HASH-LINK (Icon # c?a Docusaurus) TR N C¡C HEADING */
-/* T?t c·c pseudo-class r·c c?a Typora (xoay, d?i m‡u bg) khi hover v‡o th? <a> hash-link */
+/* 1. S?A L?I HASH-LINK (Icon # c?a Docusaurus) TRÔøΩN CÔøΩC HEADING */
+/* T?t cÔøΩc pseudo-class rÔøΩc c?a Typora (xoay, d?i mÔøΩu bg) khi hover vÔøΩo th? <a> hash-link */
 html[data-theme='dark'] .theme-doc-markdown a.hash-link::before,
 html[data-theme='light'] .theme-doc-markdown a.hash-link::before {
     content: none !important;
@@ -663,7 +663,7 @@ html[data-theme='light'] .theme-doc-markdown h6:hover a.hash-link {
     opacity: 1 !important;
 }
 
-/* 2. S?A L?I B?NG (M?t khung, v? vi?n, thÙ c?ng do Docusaurus ghi dË) */
+/* 2. S?A L?I B?NG (M?t khung, v? vi?n, thÔøΩ c?ng do Docusaurus ghi dÔøΩ) */
 html[data-theme='dark'] .theme-doc-markdown table,
 html[data-theme='light'] .theme-doc-markdown table {
     display: table !important;
@@ -701,7 +701,7 @@ html[data-theme='dark'] .theme-doc-markdown table th {
     border-bottom: 1px solid color-mix(in srgb, var(--primary-color), transparent 80%) !important;
 }
 
-/* Vi?n ph‚n c·ch c·c dÚng/c?t bÍn trong */
+/* Vi?n phÔøΩn cÔøΩch cÔøΩc dÔøΩng/c?t bÔøΩn trong */
 html[data-theme='light'] .theme-doc-markdown table td {
     border-right: 1px solid #f0f0f0 !important;
     border-bottom: 1px solid #f0f0f0 !important;
@@ -710,7 +710,7 @@ html[data-theme='dark'] .theme-doc-markdown table td {
     border-right: 1px solid color-mix(in srgb, #fff, transparent 95%) !important;
     border-bottom: 1px solid color-mix(in srgb, var(--primary-color), transparent 85%) !important;
 }
-/* B? vi?n c·c c?nh ngo‡i c˘ng d? l‡m trÚn khung d?p hon */
+/* B? vi?n cÔøΩc c?nh ngoÔøΩi cÔøΩng d? lÔøΩm trÔøΩn khung d?p hon */
 html[data-theme='dark'] .theme-doc-markdown table td:last-child,
 html[data-theme='light'] .theme-doc-markdown table td:last-child,
 html[data-theme='dark'] .theme-doc-markdown table th:last-child,
@@ -723,3 +723,202 @@ html[data-theme='light'] .theme-doc-markdown table tr:last-child td {
 }
 
 
+
+
+/* Disable Typora aggressive inline code hover */
+html[data-theme='light'] .theme-doc-markdown code:not(.md-fencescode):hover,
+html[data-theme='dark'] .theme-doc-markdown code:not(.md-fencescode):hover {
+    background-color: var(--ifm-code-background) !important;
+    transform: none !important;
+    color: inherit !important;
+    box-shadow: none !important;
+}
+
+
+
+
+/* =============================================================== */
+/* === TYPORA CODE BLOCK MAPPING FOR DOCUSAURUS (FIXED) ======= */
+/* =============================================================== */
+
+/* 1) X√≥a hi·ªáu ·ª©ng m·∫∑c ƒë·ªãnh c·ªßa t·∫•t c·∫£ c√°c class b·ªçc code block trong Docusaurus */
+html .theme-code-block,
+html .theme-code-block > div,
+html .theme-code-block [class*='codeBlockContent_'],
+html .theme-code-block [class*='codeBlockContainer_'],
+html .theme-code-block .prism-code {
+    --prism-background-color: transparent !important;
+    background-color: transparent !important;
+    background: transparent !important;
+    box-shadow: none !important;
+    border: none !important;
+}
+
+/* √âp th·∫ª bao b·ªçc c·∫•p 1 m·∫•t padding m·∫∑c ƒë·ªãnh */
+html .theme-code-block [class*='codeBlockContent_'] {
+    margin: 0 !important; padding: 0 !important;
+}
+
+/* 2) T√°i t·∫°o v·ªè Typora tr√™n Container theme-code-block */
+html[data-theme='dark'] .theme-code-block {
+    position: relative !important; margin: 20px 0 !important; border-radius: 8px !important; 
+    background-color: #282a36 !important;
+    border: 1px solid color-mix(in srgb, var(--secondary-color), transparent 80%) !important;
+}
+html[data-theme='dark'] .theme-code-block::before {
+    content: '' !important; display: block !important; height: 32px !important; width: 100% !important; border-radius: 8px 8px 0 0 !important;
+    background-color: color-mix(in srgb, var(--secondary-color), transparent 95%) !important;
+    border-bottom: 1px solid color-mix(in srgb, var(--secondary-color), transparent 90%) !important;
+    background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZlcnNpb249IjEuMSIgIHg9IjBweCIgeT0iMHB4IiB3aWR0aD0iNDUwcHgiIGhlaWdodD0iMTMwcHgiPgogIDxlbGxpcHNlIGN4PSI2NSIgY3k9IjY1IiByeD0iNTAiIHJ5PSI1MiIgc3Ryb2tlPSJyZ2IoMjIwLDYwLDU0KSIgc3Ryb2tlLXdpZHRoPSIyIiBmaWxsPSJyZ2IoMjM3LDEwOCw5NikiLz4KICA8ZWxsaXBzZSBjeD0iMjI1IiBjeT0iNjUiIHJ4PSI1MCIgcnk9IjUyIiAgc3Ryb2tlPSJyZ2IoMjE4LDE1MSwzMykiIHN0cm9rZS13aWR0aD0iMiIgZmlsbD0icmdiKDI0NywxOTMsODEpIi8+CiAgPGVsbGlwc2UgY3g9IjM4NSIgY3k9IjY1IiByeD0iNTAiIHJ5PSI1MiIgIHN0cm9rZT0icmdiKDI3LDE2MSwzNykiIHN0cm9rZS13aWR0aD0iMiIgZmlsbD0icmdiKDEwMCwyMDAsODYpIi8+Cjwvc3ZnPg==);
+    background-repeat: no-repeat !important; background-size: 40px !important; background-position: 12px 11px !important;
+}
+html[data-theme='dark'] .theme-code-block .prism-code {
+    padding: 10px 12px 12px 20px !important; color: #f8f8f2 !important;
+    font-family: CascadiaCode, "Lucida Console", Consolas, Courier, monospace !important;
+    border-radius: 8px !important; line-height: 1.6rem !important; font-size: .95rem !important; margin: 0 !important;
+}
+
+html[data-theme='light'] .theme-code-block {
+    position: relative !important; margin: 20px 0 !important; border-radius: 5px !important; border: none !important;
+    background-color: #f8f8f8 !important;
+}
+html[data-theme='light'] .theme-code-block::before {
+    content: '' !important; display: block !important; height: 32px !important; width: 100% !important; border-radius: 5px 5px 0 0 !important; background-color: #f8f8f8 !important;
+    background: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZlcnNpb249IjEuMSIgIHg9IjBweCIgeT0iMHB4IiB3aWR0aD0iNDUwcHgiIGhlaWdodD0iMTMwcHgiPgogIDxlbGxpcHNlIGN4PSI2NSIgY3k9IjY1IiByeD0iNTAiIHJ5PSI1MiIgc3Ryb2tlPSJyZ2IoMjIwLDYwLDU0KSIgc3Ryb2tlLXdpZHRoPSIyIiBmaWxsPSJyZ2IoMjM3LDEwOCw5NikiLz4KICA8ZWxsaXBzZSBjeD0iMjI1IiBjeT0iNjUiIHJ4PSI1MCIgcnk9IjUyIiAgc3Ryb2tlPSJyZ2IoMjE4LDE1MSwzMykiIHN0cm9rZS13aWR0aD0iMiIgZmlsbD0icmdiKDI0NywxOTMsODEpIi8+CiAgPGVsbGlwc2UgY3g9IjM4NSIgY3k9IjY1IiByeD0iNTAiIHJ5PSI1MiIgIHN0cm9rZT0icmdiKDI3LDE2MSwzNykiIHN0cm9rZS13aWR0aD0iMiIgZmlsbD0icmdiKDEwMCwyMDAsODYpIi8+Cjwvc3ZnPg==);
+    background-repeat: no-repeat !important; background-size: 40px !important; background-position: 6px 11px !important; margin-bottom: 0 !important;
+}
+html[data-theme='light'] .theme-code-block .prism-code {
+    border-radius: 0 0 5px 5px !important; padding: 5px 12px 12px 20px !important;
+    color: #4f5467 !important; font-family: CascadiaCode, "Lucida Console", Consolas, Courier, monospace !important;
+    line-height: 1.8rem !important; margin: 0 !important; font-size: .95rem !important;
+}
+
+/* N√∫t copy */
+html .theme-code-block button { z-index: 10 !important; padding: 4px !important; margin-top:-5px !important; background: transparent !important; border: none !important; }
+
+/* === TYPORA CODE BLOCK MAPPING FOR DOCUSAURUS (FIXED) ====== */
+html .theme-code-block,
+html .theme-code-block > div,
+html .theme-code-block [class*='codeBlockContent_'],
+html .theme-code-block [class*='codeBlockContainer_'],
+html .theme-code-block .prism-code {
+    --prism-background-color: transparent !important;
+    background-color: transparent !important;
+    background: transparent !important;
+    box-shadow: none !important;
+    border: none !important;
+}
+html .theme-code-block [class*='codeBlockContent_'] { margin: 0 !important; padding: 0 !important; }
+html[data-theme='dark'] .theme-code-block { position: relative !important; margin: 20px 0 !important; border-radius: 8px !important; background-color: #282a36 !important; border: 1px solid color-mix(in srgb, var(--secondary-color), transparent 80%) !important; }
+html[data-theme='dark'] .theme-code-block::before { content: '' !important; display: block !important; height: 32px !important; width: 100% !important; border-radius: 8px 8px 0 0 !important; background-color: color-mix(in srgb, var(--secondary-color), transparent 95%) !important; border-bottom: 1px solid color-mix(in srgb, var(--secondary-color), transparent 90%) !important; background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZlcnNpb249IjEuMSIgIHg9IjBweCIgeT0iMHB4IiB3aWR0aD0iNDUwcHgiIGhlaWdodD0iMTMwcHgiPgogIDxlbGxpcHNlIGN4PSI2NSIgY3k9IjY1IiByeD0iNTAiIHJ5PSI1MiIgc3Ryb2tlPSJyZ2IoMjIwLDYwLDU0KSIgc3Ryb2tlLXdpZHRoPSIyIiBmaWxsPSJyZ2IoMjM3LDEwOCw5NikiLz4KICA8ZWxsaXBzZSBjeD0iMjI1IiBjeT0iNjUiIHJ4PSI1MCIgcnk9IjUyIiAgc3Ryb2tlPSJyZ2IoMjE4LDE1MSwzMykiIHN0cm9rZS13aWR0aD0iMiIgZmlsbD0icmdiKDI0NywxOTMsODEpIi8+CiAgPGVsbGlwc2UgY3g9IjM4NSIgY3k9IjY1IiByeD0iNTAiIHJ5PSI1MiIgIHN0cm9rZT0icmdiKDI3LDE2MSwzNykiIHN0cm9rZS13aWR0aD0iMiIgZmlsbD0icmdiKDEwMCwyMDAsODYpIi8+Cjwvc3ZnPg==); background-repeat: no-repeat !important; background-size: 40px !important; background-position: 12px 11px !important; }
+html[data-theme='dark'] .theme-code-block .prism-code { padding: 10px 12px 12px 20px !important; color: #f8f8f2 !important; font-family: CascadiaCode, 'Lucida Console', Consolas, Courier, monospace !important; border-radius: 8px !important; line-height: 1.6rem !important; font-size: .95rem !important; margin: 0 !important; }
+html[data-theme='light'] .theme-code-block { position: relative !important; margin: 20px 0 !important; border-radius: 5px !important; border: none !important; background-color: #f8f8f8 !important; }
+html[data-theme='light'] .theme-code-block::before { content: '' !important; display: block !important; height: 32px !important; width: 100% !important; border-radius: 5px 5px 0 0 !important; background-color: #f8f8f8 !important; background: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZlcnNpb249IjEuMSIgIHg9IjBweCIgeT0iMHB4IiB3aWR0aD0iNDUwcHgiIGhlaWdodD0iMTMwcHgiPgogIDxlbGxpcHNlIGN4PSI2NSIgY3k9IjY1IiByeD0iNTAiIHJ5PSI1MiIgc3Ryb2tlPSJyZ2IoMjIwLDYwLDU0KSIgc3Ryb2tlLXdpZHRoPSIyIiBmaWxsPSJyZ2IoMjM3LDEwOCw5NikiLz4KICA8ZWxsaXBzZSBjeD0iMjI1IiBjeT0iNjUiIHJ4PSI1MCIgcnk9IjUyIiAgc3Ryb2tlPSJyZ2IoMjE4LDE1MSwzMykiIHN0cm9rZS13aWR0aD0iMiIgZmlsbD0icmdiKDI0NywxOTMsODEpIi8+CiAgPGVsbGlwc2UgY3g9IjM4NSIgY3k9IjY1IiByeD0iNTAiIHJ5PSI1MiIgIHN0cm9rZT0icmdiKDI3LDE2MSwzNykiIHN0cm9rZS13aWR0aD0iMiIgZmlsbD0icmdiKDEwMCwyMDAsODYpIi8+Cjwvc3ZnPg==); background-repeat: no-repeat !important; background-size: 40px !important; background-position: 6px 11px !important; margin-bottom: 0 !important; }
+html[data-theme='light'] .theme-code-block .prism-code { border-radius: 0 0 5px 5px !important; padding: 5px 12px 12px 20px !important; color: #4f5467 !important; font-family: CascadiaCode, 'Lucida Console', Consolas, Courier, monospace !important; line-height: 1.8rem !important; margin: 0 !important; font-size: .95rem !important; }
+html .theme-code-block button { z-index: 10 !important; padding: 4px !important; margin-top:-5px !important; background: transparent !important; border: none !important; box-shadow: none !important; }
+/* Fix highlighted code line in Docusaurus */
+html .theme-code-block-highlighted-line { background-color: rgba(255,255,255,0.1) !important; }
+
+/* =============================================================== */
+/* === S·ª¨A L·ªñI INLINE CODE C·ª¶A TYPORA √ÅM L√äN CODE BLOCK ====== */
+/* =============================================================== */
+html[data-theme='dark'] .theme-doc-markdown pre code,
+html[data-theme='light'] .theme-doc-markdown pre code,
+html .theme-code-block pre code {
+    background-color: transparent !important;
+    border: none !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    border-radius: 0 !important;
+    box-shadow: none !important;
+    color: inherit !important;
+}
+
+/* =============================================================== */
+/* === S·ª¨A L·ªñI INLINE CODE C·ª¶A TYPORA √ÅM L√äN CODE BLOCK (HOVER) == */
+/* =============================================================== */
+html[data-theme='dark'] .theme-doc-markdown pre code:hover,
+html[data-theme='light'] .theme-doc-markdown pre code:hover,
+html[data-theme='dark'] .theme-code-block code:hover,
+html[data-theme='light'] .theme-code-block code:hover,
+html .theme-code-block:hover,
+html .theme-code-block pre:hover {
+    background-color: transparent !important;
+    transform: none !important;
+    box-shadow: none !important;
+    border: none !important;
+    color: inherit !important;
+}
+
+/* ƒê·∫£m b·∫£o Docusaurus kh√¥ng th√™m hi·ªáu ·ª©ng hover cho container */
+html[data-theme='dark'] .theme-code-block:hover {
+    background-color: #282a36 !important;
+    border: 1px solid color-mix(in srgb, var(--secondary-color), transparent 80%) !important;
+}
+html[data-theme='light'] .theme-code-block:hover {
+    background-color: #f8f8f8 !important;
+    border: none !important;
+}
+/* =============================================================== */
+/* KILL TYPORA HOVER FOR DOCUSAURUS CODE BLOCKS (MAX SPECIFICITY)  */
+/* =============================================================== */
+html[data-theme='dark'] .theme-doc-markdown pre code:not(.md-fencescode):hover,
+html[data-theme='light'] .theme-doc-markdown pre code:not(.md-fencescode):hover,
+html[data-theme='dark'] .theme-doc-markdown .theme-code-block code:not(.md-fencescode):hover,
+html[data-theme='light'] .theme-doc-markdown .theme-code-block code:not(.md-fencescode):hover {
+    background-color: transparent !important;
+    transform: none !important;
+    color: #f8f8f2 !important; /* light mode will be auto overridden by next rule or we can split */
+    box-shadow: none !important;
+    border: none !important;
+    text-decoration: none !important;
+}
+
+html[data-theme='light'] .theme-doc-markdown .theme-code-block code:not(.md-fencescode):hover,
+html[data-theme='light'] .theme-doc-markdown pre code:not(.md-fencescode):hover {
+    color: #4f5467 !important;
+}
+
+/* =============================================================== */
+/* === S·ª¨A L·ªñI ICON HEADING (h3, h4, h5, h6) B·ªä M·∫§T M√ÄU M·∫∂C ƒê·ªäNH MASK == */
+/* =============================================================== */
+
+html[data-theme='dark'] .theme-doc-markdown h3:after,
+html[data-theme='dark'] .theme-doc-markdown h4:after,
+html[data-theme='dark'] .theme-doc-markdown h5:after,
+html[data-theme='dark'] .theme-doc-markdown h6:after,
+html[data-theme='light'] .theme-doc-markdown h3:after,
+html[data-theme='light'] .theme-doc-markdown h4:after,
+html[data-theme='light'] .theme-doc-markdown h5:after,
+html[data-theme='light'] .theme-doc-markdown h6:after {
+    content: '' !important;
+    display: inline-block !important;
+    height: 1.2em !important;
+    width: 1.5em !important;
+    vertical-align: middle !important;
+    margin-left: 5px !important;
+    background-color: var(--primary-color) !important;
+    -webkit-mask-repeat: no-repeat !important;
+    mask-repeat: no-repeat !important;
+    -webkit-mask-position: center !important;
+    mask-position: center !important;
+    -webkit-mask-size: contain !important;
+    mask-size: contain !important;
+    transform: translateY(-1px);
+}
+
+html[data-theme='dark'] .theme-doc-markdown h4:after,
+html[data-theme='light'] .theme-doc-markdown h4:after {
+    -webkit-mask-image: var(--h4-icon-shape) !important;
+    mask-image: var(--h4-icon-shape) !important;
+}
+html[data-theme='dark'] .theme-doc-markdown h5:after,
+html[data-theme='light'] .theme-doc-markdown h5:after {
+    -webkit-mask-image: var(--h5-icon-shape) !important;
+    mask-image: var(--h5-icon-shape) !important;
+}
+html[data-theme='dark'] .theme-doc-markdown h6:after,
+html[data-theme='light'] .theme-doc-markdown h6:after {
+    -webkit-mask-image: var(--h6-icon-shape) !important;
+    mask-image: var(--h6-icon-shape) !important;
+}
