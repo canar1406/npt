@@ -534,10 +534,17 @@ html {
     vertical-align: middle;
 }
 
-html[data-theme='dark'] .theme-doc-markdown h2,
-html[data-theme='light'] .theme-doc-markdown h2 {
+html[data-theme='dark'] .theme-doc-markdown h2 {
     background: var(--h2-bg-image) !important;
-    padding: 10px !important;
+    background-color: rgba(255, 255, 255, .02) !important;
+    padding: 5px 12px !important;
+    border-radius: 8px !important;
+}
+
+html[data-theme='light'] .theme-doc-markdown h2 {
+    background: var(--head-title-h2-background) !important;
+    background-size: 200% auto !important;
+    padding: 5px 12px !important;
     border-radius: 8px !important;
 }
 .theme-doc-markdown h2::after {
@@ -714,4 +721,5 @@ html[data-theme='dark'] .theme-doc-markdown table tr:last-child td,
 html[data-theme='light'] .theme-doc-markdown table tr:last-child td {
     border-bottom: none !important;
 }
+
 
