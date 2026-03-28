@@ -9,10 +9,6 @@
 - C. $2$
 - **[Đúng]** D. $-3$
 
-```
-test
-```
-
 > **Lời giải:**
 > Theo định nghĩa đạo hàm tại điểm, ta có $\displaystyle\lim_{x\to 1}\dfrac{f(x)-f(1)}{1-x}=-\displaystyle\lim_{x\to 1}\dfrac{f(x)-f(1)}{x-1}=-f'(1)=-3$.
 
