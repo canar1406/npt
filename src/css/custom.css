@@ -922,3 +922,60 @@ html[data-theme='light'] .theme-doc-markdown h6:after {
     -webkit-mask-image: var(--h6-icon-shape) !important;
     mask-image: var(--h6-icon-shape) !important;
 }
+
+/* =============================================================== */
+/* === SỬA LỖI KHỐI VUÔNG XANH TRÊN TRANG ABOUT (GLOBAL HEADING) == */
+/* =============================================================== */
+/* Do Typora khai báo h4:after, h5:after, h6:after mà quên không đi kèm .theme-doc-markdown */
+html body h1:after,
+html body h2:after,
+html body h3:after,
+html body h4:after,
+html body h5:after,
+html body h6:after,
+html body h1::before,
+html body h2::before,
+html body h3::before,
+html body h4::before,
+html body h5::before,
+html body h6::before {
+    display: none !important;
+    content: none !important;
+}
+
+/* Kích hoạt lại cho đúng phạm vi bài viết Markdown (có tính đặc tả cao hơn nên sẽ thắng) */
+html[data-theme] .theme-doc-markdown h1:after,
+html[data-theme] .theme-doc-markdown h2:after,
+html[data-theme] .theme-doc-markdown h3:after,
+html[data-theme] .theme-doc-markdown h4:after,
+html[data-theme] .theme-doc-markdown h5:after,
+html[data-theme] .theme-doc-markdown h6:after {
+    display: inline-block !important;
+    content: '' !important;
+}
+
+html[data-theme] .theme-doc-markdown h1::before,
+html[data-theme] .theme-doc-markdown h2::before,
+html[data-theme] .theme-doc-markdown h3::before,
+html[data-theme] .theme-doc-markdown h4::before,
+html[data-theme] .theme-doc-markdown h5::before,
+html[data-theme] .theme-doc-markdown h6::before {
+    display: inline-block !important;
+    /* content: ""; sẽ được gán lại bởi Typora CSS phía dưới */
+}
+html[data-theme] .theme-doc-markdown h1::before,
+html[data-theme] .theme-doc-markdown h2::before,
+html[data-theme] .theme-doc-markdown h3::before,
+html[data-theme] .theme-doc-markdown h4::before,
+html[data-theme] .theme-doc-markdown h5::before,
+html[data-theme] .theme-doc-markdown h6::before {
+    content: '' !important;
+}
+html[data-theme] .theme-doc-markdown h1::before,
+html[data-theme] .theme-doc-markdown h2::before,
+html[data-theme] .theme-doc-markdown h3::before,
+html[data-theme] .theme-doc-markdown h4::before,
+html[data-theme] .theme-doc-markdown h5::before,
+html[data-theme] .theme-doc-markdown h6::before {
+    content: '' !important;
+}
