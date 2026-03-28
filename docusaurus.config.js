@@ -53,14 +53,28 @@ const config = {
         docs: {
           sidebarPath: './sidebars.js',
           remarkPlugins: [remarkMath],
-          rehypePlugins: [rehypeKatex],
+          rehypePlugins: [[rehypeKatex, {
+              strict: false,
+              macros: {
+                "\\heva": "\\begin{cases}#1\\end{cases}",
+                "\\hoac": "\\left[\\begin{aligned}#1\\end{aligned}\\right."
+              }
+            }]
+          ],
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
         },
         blog: {
           showReadingTime: true,
           remarkPlugins: [remarkMath],
-          rehypePlugins: [rehypeKatex],
+          rehypePlugins: [[rehypeKatex, {
+              strict: false,
+              macros: {
+                "\\heva": "\\begin{cases}#1\\end{cases}",
+                "\\hoac": "\\left[\\begin{aligned}#1\\end{aligned}\\right."
+              }
+            }]
+          ],
           feedOptions: {
             type: ['rss', 'atom'],
             xslt: true,
