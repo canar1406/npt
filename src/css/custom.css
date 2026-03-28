@@ -1,4 +1,4 @@
-﻿/**
+/**
  * Any CSS included here will be global. The classic template
  * bundles Infima by default. Infima is a CSS framework designed to
  * work well for content-centric websites.
@@ -181,7 +181,7 @@ html {
 
   .navbar-sidebar__items {
     height: calc(100vh - 60px);
-    /* overflow-y: auto; <-- DÃ’NG NÃ€Y ÄÃƒ XÃ“A THEO PHÃT HIá»†N Cá»¦A Báº N */
+    /* overflow-y: auto; <-- DÒNG NÀY ĐÃ XÓA THEO PHÁT HIỆN CỦA BẠN */
     padding-bottom: 20px;
   }
 
@@ -203,28 +203,28 @@ html {
     transform: scale(1);
   }
 
-  /* áº¨n hamburger khi menu má»Ÿ */
+  /* Ẩn hamburger khi menu mở */
   .navbar-sidebar--show .navbar__toggle {
     opacity: 0;
     transform: scale(0.8);
     pointer-events: none;
   }
 
-  /* Hiá»‡u á»©ng mÆ°á»£t mÃ  cho menu sidebar - an toÃ n */
+  /* Hiệu ứng mượt mà cho menu sidebar - an toàn */
   .navbar-sidebar {
     max-height: 100vh;
-    /* overflow-y: auto; <-- DÃ’NG NÃ€Y CÅ¨NG ÄÃƒ XÃ“A */
+    /* overflow-y: auto; <-- DÒNG NÀY CŨNG ĐÃ XÓA */
     z-index: 999;
     transform: translateX(-100%);
     transition: transform 0.3s ease-in-out;
   }
 
-  /* Menu hiá»‡n ra */
+  /* Menu hiện ra */
   .navbar-sidebar--show .navbar-sidebar {
     transform: translateX(0);
   }
 
-  /* Fix menu backdrop - an toÃ n */
+  /* Fix menu backdrop - an toàn */
   .navbar-sidebar__backdrop {
     z-index: 998;
     opacity: 0;
@@ -266,7 +266,7 @@ html {
     flex: 1;
   }
 
-  /* Hamburger toggle vá»›i hiá»‡u á»©ng mÆ°á»£t mÃ  */
+  /* Hamburger toggle với hiệu ứng mượt mà */
   .navbar__toggle {
     background: none;
     border: none;
@@ -279,14 +279,14 @@ html {
     z-index: 1001;
   }
 
-  /* Hiá»‡u á»©ng hover cho hamburger */
+  /* Hiệu ứng hover cho hamburger */
   .navbar__toggle:hover {
     background: rgba(var(--ifm-color-primary-rgb), 0.1);
     border-radius: 8px;
     transform: scale(1.05);
   }
 
-  /* Fix mobile menu container vá»›i hiá»‡u á»©ng mÆ°á»£t mÃ  */
+  /* Fix mobile menu container với hiệu ứng mượt mà */
   .navbar-sidebar__brand {
     display: flex;
     align-items: center;
@@ -295,7 +295,7 @@ html {
     border-bottom: 1px solid var(--ifm-color-emphasis-200);
   }
 
-  /* NÃºt Ä‘Ã³ng menu vá»›i hiá»‡u á»©ng */
+  /* Nút đóng menu với hiệu ứng */
   .navbar-sidebar__close {
     background: none;
     border: none;
@@ -308,13 +308,13 @@ html {
     transform: scale(0.8);
   }
 
-  /* Hiá»‡n nÃºt Ä‘Ã³ng khi menu má»Ÿ */
+  /* Hiện nút đóng khi menu mở */
   .navbar-sidebar--show .navbar-sidebar__close {
     opacity: 1;
     transform: scale(1);
   }
 
-  /* Hiá»‡u á»©ng hover cho nÃºt Ä‘Ã³ng */
+  /* Hiệu ứng hover cho nút đóng */
   .navbar-sidebar__close:hover {
     background: rgba(var(--ifm-color-primary-rgb), 0.1);
     transform: scale(1.05);
@@ -349,7 +349,7 @@ html {
   .navbar-sidebar__items {
     height: calc(100vh - 80px);
     height: calc(100dvh - 80px);
-    /* overflow-y: auto; <-- DÃ’NG NÃ€Y CÅ¨NG ÄÃƒ XÃ“A */
+    /* overflow-y: auto; <-- DÒNG NÀY CŨNG ĐÃ XÓA */
     -webkit-overflow-scrolling: touch;
     transition: all 0.3s ease-in-out;
   }
@@ -392,17 +392,17 @@ html {
 .feature:nth-child(3) {
   animation: fadeIn 0.6s ease-out 0.5s both;
 }
-/* Loáº¡i bá» hiá»‡u á»©ng staggered phá»©c táº¡p - giá»¯ menu Ä‘Æ¡n giáº£n */
+/* Loại bỏ hiệu ứng staggered phức tạp - giữ menu đơn giản */
 .navbar-sidebar .menu__list-item {
   transition: all 0.3s ease-in-out;
 }
-/* Hiá»‡u á»©ng pulse cho hamburger khi focus */
+/* Hiệu ứng pulse cho hamburger khi focus */
 .navbar__toggle:focus {
   outline: none;
   box-shadow: 0 0 0 2px rgba(var(--ifm-color-primary-rgb), 0.3);
   border-radius: 8px;
 }
-/* Hiá»‡u á»©ng ripple khi click hamburger */
+/* Hiệu ứng ripple khi click hamburger */
 .navbar__toggle::after {
   content: '';
   position: absolute;
@@ -420,25 +420,25 @@ html {
   width: 40px;
   height: 40px;
 }
-/* Hiá»‡u á»©ng backdrop Ä‘Æ¡n giáº£n */
+/* Hiệu ứng backdrop đơn giản */
 .navbar-sidebar__backdrop {
   transition: opacity 0.3s ease-in-out;
 }
 .navbar-sidebar--show .navbar-sidebar__backdrop {
   opacity: 1;
 }
-/* Cáº£i thiá»‡n hiá»‡u á»©ng slide cho menu - an toÃ n */
+/* Cải thiện hiệu ứng slide cho menu - an toàn */
 .navbar-sidebar {
   transition: transform 0.3s ease-in-out;
 }
 .navbar-sidebar--show .navbar-sidebar {
   transform: translateX(0);
 }
-/* Hiá»‡u á»©ng cho brand logo trong sidebar - Ä‘Æ¡n giáº£n */
+/* Hiệu ứng cho brand logo trong sidebar - đơn giản */
 .navbar-sidebar__brand {
   transition: all 0.3s ease-in-out;
 }
-/* Hiá»‡u á»©ng Ä‘Æ¡n giáº£n cho hamburger vÃ  close button */
+/* Hiệu ứng đơn giản cho hamburger và close button */
 .navbar__toggle {
   transition: all 0.3s ease-in-out;
 }
@@ -534,10 +534,11 @@ html {
     vertical-align: middle;
 }
 
-.theme-doc-markdown h2 {
-    background: var(--h2-bg-image);
-    padding: 10px;
-    border-radius: 8px;
+html[data-theme='dark'] .theme-doc-markdown h2,
+html[data-theme='light'] .theme-doc-markdown h2 {
+    background: var(--h2-bg-image) !important;
+    padding: 10px !important;
+    border-radius: 8px !important;
 }
 .theme-doc-markdown h2::after {
     content: var(--h2-icon-shape);
@@ -556,4 +557,161 @@ html {
     color: var(--text-color);
 }
 
+
+/* T?O �U?NG K? D?C CHO LIST ITEMS TRONG MULTI-LINE TREE LIST */
+html[data-theme='dark'] .theme-doc-markdown li,
+html[data-theme='light'] .theme-doc-markdown li {
+    position: relative;
+}
+
+html[data-theme='dark'] .theme-doc-markdown li::before,
+html[data-theme='light'] .theme-doc-markdown li::before {
+    content: '' !important;
+    display: block !important;
+    position: absolute !important;
+    left: -1.05em !important;
+    top: 0 !important;
+    bottom: -0.5em !important;
+    width: 1.5px !important;
+    border: none !important;
+    height: auto !important;
+    padding: 0 !important;
+    /* Gradient switch: hides the line if height is shorter than ~4.2em */
+    background: linear-gradient(
+        to bottom,
+        transparent 0,
+        transparent 2.3em,
+        transparent calc( 2.3em - (100% - 4.2em) * 9999 ), 
+        var(--ifm-color-primary) 0,
+        var(--ifm-color-primary) calc(100% - 1em),
+        transparent 0,
+        transparent 100%
+    ) !important;
+    opacity: 0.6;
+    pointer-events: none;
+}
+
+/* FIX �?C TR?: Khi List Item c� ch?a ngo?c vu�ng/ma tr?n (mtable) l�m d?y line-height l�n cao
+   -> V? tr� c?a d?u ch?m (bullet) b? d?y xu?ng du?i Bounding Box.
+   -> K�o d�i v�ng t�ng h�nh (transparent) xu?ng 3.8em d? b?o v? d?u ch?m kh?i b? d�m xuy�n */
+html[data-theme='dark'] .theme-doc-markdown li:has(.katex .mtable)::before,
+html[data-theme='light'] .theme-doc-markdown li:has(.katex .mtable)::before {
+    background: linear-gradient(
+        to bottom,
+        transparent 0,
+        transparent 3.8em,
+        transparent calc( 3.8em - (100% - 5.5em) * 9999 ), 
+        var(--ifm-color-primary) 0,
+        var(--ifm-color-primary) calc(100% - 1em),
+        transparent 0,
+        transparent 100%
+    ) !important;
+}
+
+/* T?t g?ch d?c ho�n to�n v?i c�c list t? d�nh d?u no-line */
+html[data-theme='dark'] .theme-doc-markdown li.no-line::before,
+html[data-theme='light'] .theme-doc-markdown li.no-line::before {
+    display: none !important;
+}
+
+
+/* ========================================================
+   T?NG H?P V� L?I B?NG V� HASH-LINK CHO C? THEME S�NG/T?I 
+   (Do chuy?n giao theme b? roi r?ng / Docusaurus ghi d�)
+======================================================== */
+
+/* 1. S?A L?I HASH-LINK (Icon # c?a Docusaurus) TR�N C�C HEADING */
+/* T?t c�c pseudo-class r�c c?a Typora (xoay, d?i m�u bg) khi hover v�o th? <a> hash-link */
+html[data-theme='dark'] .theme-doc-markdown a.hash-link::before,
+html[data-theme='light'] .theme-doc-markdown a.hash-link::before {
+    content: none !important;
+    display: none !important;
+    background: none !important;
+    transform: none !important;
+}
+
+html[data-theme='dark'] .theme-doc-markdown a.hash-link,
+html[data-theme='light'] .theme-doc-markdown a.hash-link {
+    display: inline-block !important;
+    margin-left: 8px !important;
+    opacity: 0;
+    transition: opacity 0.3s ease !important;
+    color: var(--ifm-color-primary) !important;
+    text-decoration: none !important;
+    background: transparent !important;
+}
+
+html[data-theme='dark'] .theme-doc-markdown h1:hover a.hash-link,
+html[data-theme='dark'] .theme-doc-markdown h2:hover a.hash-link,
+html[data-theme='dark'] .theme-doc-markdown h3:hover a.hash-link,
+html[data-theme='dark'] .theme-doc-markdown h4:hover a.hash-link,
+html[data-theme='dark'] .theme-doc-markdown h5:hover a.hash-link,
+html[data-theme='dark'] .theme-doc-markdown h6:hover a.hash-link,
+html[data-theme='light'] .theme-doc-markdown h1:hover a.hash-link,
+html[data-theme='light'] .theme-doc-markdown h2:hover a.hash-link,
+html[data-theme='light'] .theme-doc-markdown h3:hover a.hash-link,
+html[data-theme='light'] .theme-doc-markdown h4:hover a.hash-link,
+html[data-theme='light'] .theme-doc-markdown h5:hover a.hash-link,
+html[data-theme='light'] .theme-doc-markdown h6:hover a.hash-link {
+    opacity: 1 !important;
+}
+
+/* 2. S?A L?I B?NG (M?t khung, v? vi?n, th� c?ng do Docusaurus ghi d�) */
+html[data-theme='dark'] .theme-doc-markdown table,
+html[data-theme='light'] .theme-doc-markdown table {
+    display: table !important;
+    border-collapse: separate !important;
+    border-spacing: 0 !important;
+    width: 100% !important;
+    margin: 20px 0 !important;
+    border-radius: 8px !important;
+    overflow: hidden !important;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05) !important;
+}
+
+html[data-theme='light'] .theme-doc-markdown table {
+    border: 1px solid var(--element-color-shallow, #e0e0e0) !important;
+}
+html[data-theme='dark'] .theme-doc-markdown table {
+    border: 1px solid color-mix(in srgb, var(--primary-color), transparent 80%) !important;
+}
+
+html[data-theme='dark'] .theme-doc-markdown table th,
+html[data-theme='light'] .theme-doc-markdown table th,
+html[data-theme='dark'] .theme-doc-markdown table td,
+html[data-theme='light'] .theme-doc-markdown table td {
+    padding: 10px 15px !important;
+}
+
+html[data-theme='light'] .theme-doc-markdown table th {
+    background-color: var(--element-color-soo-shallow, #f7f9fa) !important;
+    color: var(--element-color-deep, #333) !important;
+    border-bottom: 1px solid var(--element-color-shallow, #e0e0e0) !important;
+}
+html[data-theme='dark'] .theme-doc-markdown table th {
+    background-color: color-mix(in srgb, var(--primary-color), transparent 90%) !important;
+    color: var(--primary-color) !important;
+    border-bottom: 1px solid color-mix(in srgb, var(--primary-color), transparent 80%) !important;
+}
+
+/* Vi?n ph�n c�ch c�c d�ng/c?t b�n trong */
+html[data-theme='light'] .theme-doc-markdown table td {
+    border-right: 1px solid #f0f0f0 !important;
+    border-bottom: 1px solid #f0f0f0 !important;
+}
+html[data-theme='dark'] .theme-doc-markdown table td {
+    border-right: 1px solid color-mix(in srgb, #fff, transparent 95%) !important;
+    border-bottom: 1px solid color-mix(in srgb, var(--primary-color), transparent 85%) !important;
+}
+/* B? vi?n c�c c?nh ngo�i c�ng d? l�m tr�n khung d?p hon */
+html[data-theme='dark'] .theme-doc-markdown table td:last-child,
+html[data-theme='light'] .theme-doc-markdown table td:last-child,
+html[data-theme='dark'] .theme-doc-markdown table th:last-child,
+html[data-theme='light'] .theme-doc-markdown table th:last-child {
+    border-right: none !important;
+}
+html[data-theme='dark'] .theme-doc-markdown table tr:last-child td,
+html[data-theme='light'] .theme-doc-markdown table tr:last-child td {
+    border-bottom: none !important;
+}
 

@@ -89,7 +89,8 @@ const config = {
         theme: {
           customCss: [
             './src/css/custom.css',
-            './phycat-abyss.css'
+            './phycat-abyss.css',
+            './phycat-forest.css'
           ],
         },
       }),

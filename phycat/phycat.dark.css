@@ -13,7 +13,7 @@ html[data-theme='dark'] {
     font-family: "LXGW WenKai"
 }
 
-html[data-theme='dark'] .markdown {
+html[data-theme='dark'] .theme-doc-markdown {
     max-width: var(--max-width);
     margin: 0 auto;
     padding: 15px;
@@ -27,7 +27,7 @@ html[data-theme='dark'] .markdown {
     z-index: 0
 }
 
-html[data-theme='dark'] .markdown::before {
+html[data-theme='dark'] .theme-doc-markdown::before {
     content: "";
     position: absolute;
     top: 0;
@@ -48,7 +48,7 @@ html[data-theme='dark'] .markdown::before {
     mask-position: center
 }
 
-html[data-theme='dark'] .markdown p {
+html[data-theme='dark'] .theme-doc-markdown p {
     color: var(--text-color-secondary);
     margin: 0 10px;
     font-family: Optima-Regular, Optima, "LXGW WenKai", PingFangSC-light, PingFangTC-light, "PingFang SC", Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
@@ -56,10 +56,10 @@ html[data-theme='dark'] .markdown p {
     word-spacing: 2px
 }
 
-html[data-theme='dark'] .markdown h3.md-heading:after,
-h4.md-heading:after,
-h5.md-heading:after,
-h6.md-heading:after {
+html[data-theme='dark'] .theme-doc-markdown h3:after,
+h4:after,
+h5:after,
+h6:after {
     content: " ";
     display: inline-block;
     height: 2em;
@@ -75,47 +75,47 @@ h6.md-heading:after {
     mask-size: 24px 24px
 }
 
-html[data-theme='dark'] .markdown h3.md-heading:after {
+html[data-theme='dark'] .theme-doc-markdown h3:after {
     -webkit-mask-image: var(--h3-icon-shape);
     mask-image: var(--h3-icon-shape)
 }
 
-html[data-theme='dark'] .markdown h4.md-heading:after {
+html[data-theme='dark'] .theme-doc-markdown h4:after {
     -webkit-mask-image: var(--h4-icon-shape);
     mask-image: var(--h4-icon-shape)
 }
 
-html[data-theme='dark'] .markdown h5.md-heading:after {
+html[data-theme='dark'] .theme-doc-markdown h5:after {
     -webkit-mask-image: var(--h5-icon-shape);
     mask-image: var(--h5-icon-shape)
 }
 
-html[data-theme='dark'] .markdown h6.md-heading:after {
+html[data-theme='dark'] .theme-doc-markdown h6:after {
     -webkit-mask-image: var(--h6-icon-shape);
     mask-image: var(--h6-icon-shape)
 }
 
-html[data-theme='dark'] .markdown h1,
-html[data-theme='dark'] .markdown h2,
-html[data-theme='dark'] .markdown h3,
-html[data-theme='dark'] .markdown h4,
-html[data-theme='dark'] .markdown h5,
-html[data-theme='dark'] .markdown h6 {
+html[data-theme='dark'] .theme-doc-markdown h1,
+html[data-theme='dark'] .theme-doc-markdown h2,
+html[data-theme='dark'] .theme-doc-markdown h3,
+html[data-theme='dark'] .theme-doc-markdown h4,
+html[data-theme='dark'] .theme-doc-markdown h5,
+html[data-theme='dark'] .theme-doc-markdown h6 {
     color: var(--text-color);
     transition: all .3s ease
 }
 
-html[data-theme='dark'] .markdown h1,
-html[data-theme='dark'] .markdown h2,
-html[data-theme='dark'] .markdown h3,
-html[data-theme='dark'] .markdown h4,
-html[data-theme='dark'] .markdown h5,
-html[data-theme='dark'] .markdown h6 {
+html[data-theme='dark'] .theme-doc-markdown h1,
+html[data-theme='dark'] .theme-doc-markdown h2,
+html[data-theme='dark'] .theme-doc-markdown h3,
+html[data-theme='dark'] .theme-doc-markdown h4,
+html[data-theme='dark'] .theme-doc-markdown h5,
+html[data-theme='dark'] .theme-doc-markdown h6 {
     color: var(--text-color);
     transition: all .3s ease
 }
 
-html[data-theme='dark'] .markdown h1 {
+html[data-theme='dark'] .theme-doc-markdown h1 {
     text-align: center;
     font-size: 1.8rem;
     margin: 15px auto;
@@ -129,7 +129,7 @@ html[data-theme='dark'] .markdown h1 {
     transition: color .3s ease, transform .3s ease, text-shadow .3s ease
 }
 
-html[data-theme='dark'] .markdown h1::after {
+html[data-theme='dark'] .theme-doc-markdown h1::after {
     content: '';
     position: absolute;
     bottom: 0;
@@ -143,19 +143,19 @@ html[data-theme='dark'] .markdown h1::after {
     transition: width .4s cubic-bezier(.25, .8, .25, 1), box-shadow .3s ease
 }
 
-html[data-theme='dark'] .markdown h1:not(.md-focus):hover {
+html[data-theme='dark'] .theme-doc-markdown h1:not(.md-focus):hover {
     transform: translateY(-2px);
     text-shadow: var(--glow-shadow-text)
 }
 
-html[data-theme='dark'] .markdown h1.md-focus::after,
-html[data-theme='dark'] .markdown h1:focus::after,
-html[data-theme='dark'] .markdown h1:hover::after {
+html[data-theme='dark'] .theme-doc-markdown h1.md-focus::after,
+html[data-theme='dark'] .theme-doc-markdown h1:focus::after,
+html[data-theme='dark'] .theme-doc-markdown h1:hover::after {
     width: 100%;
     box-shadow: 0 0 15px var(--h1-underline-color)
 }
 
-html[data-theme='dark'] .markdown h2 {
+html[data-theme='dark'] .theme-doc-markdown h2 {
     font-size: 1.4rem;
     width: fit-content;
     margin: 1rem 0;
@@ -173,9 +173,9 @@ html[data-theme='dark'] .markdown h2 {
     transition: all .5s ease
 }
 
-html[data-theme='dark'] .markdown h2.md-focus,
-html[data-theme='dark'] .markdown h2:focus,
-html[data-theme='dark'] .markdown h2:hover {
+html[data-theme='dark'] .theme-doc-markdown h2.md-focus,
+html[data-theme='dark'] .theme-doc-markdown h2:focus,
+html[data-theme='dark'] .theme-doc-markdown h2:hover {
     color: var(--primary-color);
     background-image: var(--h2-bg-image-hover);
     border-bottom-color: var(--h2-border-bottom-hover);
@@ -184,7 +184,7 @@ html[data-theme='dark'] .markdown h2:hover {
     transform: translateY(-1px)
 }
 
-html[data-theme='dark'] .markdown h3 {
+html[data-theme='dark'] .theme-doc-markdown h3 {
     position: relative;
     padding-left: 15px;
     font-size: 1.25rem;
@@ -192,7 +192,7 @@ html[data-theme='dark'] .markdown h3 {
     transition: padding-left .3s ease, color .3s ease
 }
 
-html[data-theme='dark'] .markdown h3::before {
+html[data-theme='dark'] .theme-doc-markdown h3::before {
     content: '';
     position: absolute;
     left: 0;
@@ -206,30 +206,30 @@ html[data-theme='dark'] .markdown h3::before {
     opacity: .8
 }
 
-html[data-theme='dark'] .markdown h3.md-focus,
-html[data-theme='dark'] .markdown h3:focus,
-html[data-theme='dark'] .markdown h3:hover {
+html[data-theme='dark'] .theme-doc-markdown h3.md-focus,
+html[data-theme='dark'] .theme-doc-markdown h3:focus,
+html[data-theme='dark'] .theme-doc-markdown h3:hover {
     color: var(--primary-color);
     padding-left: 20px;
     text-shadow: var(--glow-shadow-text)
 }
 
-html[data-theme='dark'] .markdown h3.md-focus::before,
-html[data-theme='dark'] .markdown h3:focus::before,
-html[data-theme='dark'] .markdown h3:hover::before {
+html[data-theme='dark'] .theme-doc-markdown h3.md-focus::before,
+html[data-theme='dark'] .theme-doc-markdown h3:focus::before,
+html[data-theme='dark'] .theme-doc-markdown h3:hover::before {
     height: 60%;
     opacity: 1;
     box-shadow: var(--glow-shadow-box)
 }
 
-html[data-theme='dark'] .markdown h4 {
+html[data-theme='dark'] .theme-doc-markdown h4 {
     margin: 20px 0;
     font-size: 1.15rem;
     display: flex;
     align-items: center
 }
 
-html[data-theme='dark'] .markdown h4::before {
+html[data-theme='dark'] .theme-doc-markdown h4::before {
     content: "";
     margin-right: 10px;
     display: inline-block;
@@ -240,29 +240,29 @@ html[data-theme='dark'] .markdown h4::before {
     transition: all .3s ease
 }
 
-html[data-theme='dark'] .markdown h4.md-focus,
-html[data-theme='dark'] .markdown h4:focus,
-html[data-theme='dark'] .markdown h4:hover {
+html[data-theme='dark'] .theme-doc-markdown h4.md-focus,
+html[data-theme='dark'] .theme-doc-markdown h4:focus,
+html[data-theme='dark'] .theme-doc-markdown h4:hover {
     color: var(--primary-color);
     text-shadow: var(--glow-shadow-text);
     transform: translateX(5px)
 }
 
-html[data-theme='dark'] .markdown h4.md-focus::before,
-html[data-theme='dark'] .markdown h4:focus::before,
-html[data-theme='dark'] .markdown h4:hover::before {
+html[data-theme='dark'] .theme-doc-markdown h4.md-focus::before,
+html[data-theme='dark'] .theme-doc-markdown h4:focus::before,
+html[data-theme='dark'] .theme-doc-markdown h4:hover::before {
     transform: scale(1.2);
     box-shadow: var(--glow-shadow-box)
 }
 
-html[data-theme='dark'] .markdown h5 {
+html[data-theme='dark'] .theme-doc-markdown h5 {
     margin: 20px 0;
     font-size: 1.1rem;
     display: flex;
     align-items: center
 }
 
-html[data-theme='dark'] .markdown h5::before {
+html[data-theme='dark'] .theme-doc-markdown h5::before {
     content: "";
     margin-right: 10px;
     display: inline-block;
@@ -275,30 +275,30 @@ html[data-theme='dark'] .markdown h5::before {
     transition: all .3s ease
 }
 
-html[data-theme='dark'] .markdown h5.md-focus,
-html[data-theme='dark'] .markdown h5:focus,
-html[data-theme='dark'] .markdown h5:hover {
+html[data-theme='dark'] .theme-doc-markdown h5.md-focus,
+html[data-theme='dark'] .theme-doc-markdown h5:focus,
+html[data-theme='dark'] .theme-doc-markdown h5:hover {
     color: var(--primary-color);
     text-shadow: var(--glow-shadow-text);
     transform: translateX(5px)
 }
 
-html[data-theme='dark'] .markdown h5.md-focus::before,
-html[data-theme='dark'] .markdown h5:focus::before,
-html[data-theme='dark'] .markdown h5:hover::before {
+html[data-theme='dark'] .theme-doc-markdown h5.md-focus::before,
+html[data-theme='dark'] .theme-doc-markdown h5:focus::before,
+html[data-theme='dark'] .theme-doc-markdown h5:hover::before {
     background-color: transparent;
     border-color: var(--primary-color);
     box-shadow: var(--glow-shadow-box);
     transform: scale(1.2)
 }
 
-html[data-theme='dark'] .markdown h6 {
+html[data-theme='dark'] .theme-doc-markdown h6 {
     margin: 20px 0;
     font-size: 1.1rem;
     color: var(--text-color)
 }
 
-html[data-theme='dark'] .markdown h6::before {
+html[data-theme='dark'] .theme-doc-markdown h6::before {
     content: "-";
     color: var(--primary-color);
     margin-right: 7px;
@@ -307,22 +307,22 @@ html[data-theme='dark'] .markdown h6::before {
     transition: all .3s ease
 }
 
-html[data-theme='dark'] .markdown h6.md-focus,
-html[data-theme='dark'] .markdown h6:focus,
-html[data-theme='dark'] .markdown h6:hover {
+html[data-theme='dark'] .theme-doc-markdown h6.md-focus,
+html[data-theme='dark'] .theme-doc-markdown h6:focus,
+html[data-theme='dark'] .theme-doc-markdown h6:hover {
     color: var(--primary-color);
     text-shadow: var(--glow-shadow-text);
     transform: translateX(5px)
 }
 
-html[data-theme='dark'] .markdown h6.md-focus::before,
-html[data-theme='dark'] .markdown h6:focus::before,
-html[data-theme='dark'] .markdown h6:hover::before {
+html[data-theme='dark'] .theme-doc-markdown h6.md-focus::before,
+html[data-theme='dark'] .theme-doc-markdown h6:focus::before,
+html[data-theme='dark'] .theme-doc-markdown h6:hover::before {
     text-shadow: var(--glow-shadow-text);
     transform: scaleX(1.5)
 }
 
-html[data-theme='dark'] .markdown {
+html[data-theme='dark'] .theme-doc-markdown {
     counter-reset: h1
 }
 
@@ -398,7 +398,7 @@ h5 {
     counter-reset: h6toc
 }
 
-html[data-theme='dark'] .markdown h1:before {
+html[data-theme='dark'] .theme-doc-markdown h1:before {
     counter-increment: h1;
     content: var(--autonum-h1)
 }
@@ -413,12 +413,12 @@ html[data-theme='dark'] .markdown h1:before {
     content: var(--autonum-h1)
 }
 
-html[data-theme='dark'] .markdown span.md-toc-item.md-toc-h1>a:before {
+html[data-theme='dark'] .theme-doc-markdown span.md-toc-item.md-toc-h1>a:before {
     counter-increment: h1toc;
     content: var(--autonum-h1toc)
 }
 
-html[data-theme='dark'] .markdown h2:before {
+html[data-theme='dark'] .theme-doc-markdown h2:before {
     counter-increment: h2;
     content: var(--autonum-h2);
     color: var(--head-title-h2-color)
@@ -434,12 +434,12 @@ li.outline-h2>div>a.outline-label:before {
     content: var(--autonum-h2)
 }
 
-html[data-theme='dark'] .markdown span.md-toc-item.md-toc-h2>a:before {
+html[data-theme='dark'] .theme-doc-markdown span.md-toc-item.md-toc-h2>a:before {
     counter-increment: h2toc;
     content: var(--autonum-h2toc)
 }
 
-html[data-theme='dark'] .markdown h3>span:first-of-type::before {
+html[data-theme='dark'] .theme-doc-markdown h3>span:first-of-type::before {
     counter-increment: h3;
     content: var(--autonum-h3);
     color: var(--element-color)
@@ -455,12 +455,12 @@ html[data-theme='dark'] .markdown h3>span:first-of-type::before {
     content: var(--autonum-h3)
 }
 
-html[data-theme='dark'] .markdown span.md-toc-item.md-toc-h3>a:before {
+html[data-theme='dark'] .theme-doc-markdown span.md-toc-item.md-toc-h3>a:before {
     counter-increment: h3toc;
     content: var(--autonum-h3toc)
 }
 
-html[data-theme='dark'] .markdown h4>span:first-of-type::before {
+html[data-theme='dark'] .theme-doc-markdown h4>span:first-of-type::before {
     counter-increment: h4;
     content: var(--autonum-h4);
     color: var(--element-color)
@@ -476,12 +476,12 @@ html[data-theme='dark'] .markdown h4>span:first-of-type::before {
     content: var(--autonum-h4)
 }
 
-html[data-theme='dark'] .markdown span.md-toc-item.md-toc-h4>a:before {
+html[data-theme='dark'] .theme-doc-markdown span.md-toc-item.md-toc-h4>a:before {
     counter-increment: h4toc;
     content: var(--autonum-h4toc)
 }
 
-html[data-theme='dark'] .markdown h5>span:first-of-type::before {
+html[data-theme='dark'] .theme-doc-markdown h5>span:first-of-type::before {
     counter-increment: h5;
     content: var(--autonum-h5);
     color: var(--element-color)
@@ -497,12 +497,12 @@ html[data-theme='dark'] .markdown h5>span:first-of-type::before {
     content: var(--autonum-h5)
 }
 
-html[data-theme='dark'] .markdown span.md-toc-item.md-toc-h5>a:before {
+html[data-theme='dark'] .theme-doc-markdown span.md-toc-item.md-toc-h5>a:before {
     counter-increment: h5toc;
     content: var(--autonum-h5toc)
 }
 
-html[data-theme='dark'] .markdown h6>span:first-of-type::before {
+html[data-theme='dark'] .theme-doc-markdown h6>span:first-of-type::before {
     counter-increment: h6;
     content: var(--autonum-h6);
     color: var(--element-color)
@@ -518,7 +518,7 @@ html[data-theme='dark'] .markdown h6>span:first-of-type::before {
     content: var(--autonum-h6)
 }
 
-html[data-theme='dark'] .markdown span.md-toc-item.md-toc-h6>a:before {
+html[data-theme='dark'] .theme-doc-markdown span.md-toc-item.md-toc-h6>a:before {
     counter-increment: h6toc;
     content: var(--autonum-h6toc)
 }
@@ -531,43 +531,43 @@ li.md-list-item {
     margin: .4rem 0
 }
 
-html[data-theme='dark'] .markdown ol,
-html[data-theme='dark'] .markdown ul {
+html[data-theme='dark'] .theme-doc-markdown ol,
+html[data-theme='dark'] .theme-doc-markdown ul {
     margin-top: 0;
     margin-left: 16px;
     margin-bottom: 8px;
     padding-left: 13px
 }
 
-html[data-theme='dark'] .markdown em {
+html[data-theme='dark'] .theme-doc-markdown em {
     padding: 0 3px 0 0
 }
 
-html[data-theme='dark'] .markdown ul {
+html[data-theme='dark'] .theme-doc-markdown ul {
     list-style-type: disc
 }
 
-html[data-theme='dark'] .markdown ul ul {
+html[data-theme='dark'] .theme-doc-markdown ul ul {
     list-style-type: circle
 }
 
-html[data-theme='dark'] .markdown ul ul ul {
+html[data-theme='dark'] .theme-doc-markdown ul ul ul {
     list-style-type: square
 }
 
-html[data-theme='dark'] .markdown ol {
+html[data-theme='dark'] .theme-doc-markdown ol {
     list-style-type: decimal
 }
 
-html[data-theme='dark'] .markdown ol ol {
+html[data-theme='dark'] .theme-doc-markdown ol ol {
     list-style-type: lower-alpha
 }
 
-html[data-theme='dark'] .markdown ol ol ol {
+html[data-theme='dark'] .theme-doc-markdown ol ol ol {
     list-style-type: lower-roman
 }
 
-html[data-theme='dark'] .markdown li section {
+html[data-theme='dark'] .theme-doc-markdown li section {
     margin-top: 5px;
     margin-bottom: 5px;
     line-height: 1.7rem;
@@ -576,7 +576,7 @@ html[data-theme='dark'] .markdown li section {
     font-weight: 500
 }
 
-html[data-theme='dark'] .markdown li:before {
+html[data-theme='dark'] .theme-doc-markdown li:before {
     content: "";
     height: calc(100% - 50px);
     top: 35px;
@@ -585,7 +585,7 @@ html[data-theme='dark'] .markdown li:before {
     left: -12.5px
 }
 
-html[data-theme='dark'] .markdown li.task-list-item:before {
+html[data-theme='dark'] .theme-doc-markdown li.task-list-item:before {
     left: -6.5px
 }
 
@@ -686,7 +686,7 @@ html[data-theme='dark'] .markdown li.task-list-item:before {
     transition: color .4s ease
 }
 
-html[data-theme='dark'] .markdown blockquote {
+html[data-theme='dark'] .theme-doc-markdown blockquote {
     position: relative;
     margin: 20px 0;
     padding: 18px 20px 18px 48px;
@@ -697,8 +697,8 @@ html[data-theme='dark'] .markdown blockquote {
     transition: all .3s ease
 }
 
-html[data-theme='dark'] .markdown blockquote::before {
-    content: "ðŸ’¡";
+html[data-theme='dark'] .theme-doc-markdown blockquote::before {
+    content: "💡";
     position: absolute;
     left: 10px;
     top: 2px;
@@ -709,35 +709,35 @@ html[data-theme='dark'] .markdown blockquote::before {
     transition: all .3s cubic-bezier(.34, 1.56, .64, 1)
 }
 
-html[data-theme='dark'] .markdown blockquote p {
+html[data-theme='dark'] .theme-doc-markdown blockquote p {
     color: var(--text-color-secondary);
     margin-bottom: .5em
 }
 
-html[data-theme='dark'] .markdown blockquote p:last-child {
+html[data-theme='dark'] .theme-doc-markdown blockquote p:last-child {
     margin-bottom: 0
 }
 
-html[data-theme='dark'] .markdown blockquote.md-focus,
-html[data-theme='dark'] .markdown blockquote:active,
-html[data-theme='dark'] .markdown blockquote:focus,
-html[data-theme='dark'] .markdown blockquote:hover {
+html[data-theme='dark'] .theme-doc-markdown blockquote.md-focus,
+html[data-theme='dark'] .theme-doc-markdown blockquote:active,
+html[data-theme='dark'] .theme-doc-markdown blockquote:focus,
+html[data-theme='dark'] .theme-doc-markdown blockquote:hover {
     border-color: var(--primary-color);
     background-color: color-mix(in srgb, var(--hover-background-color), transparent 95%);
     box-shadow: 0 0 15px color-mix(in srgb, var(--hover-background-color), transparent 90%), inset 0 0 10px color-mix(in srgb, var(--hover-background-color), transparent 95%);
     transform: scale(1.01)
 }
 
-html[data-theme='dark'] .markdown blockquote.md-focus::before,
-html[data-theme='dark'] .markdown blockquote:focus::before,
-html[data-theme='dark'] .markdown blockquote:hover::before {
+html[data-theme='dark'] .theme-doc-markdown blockquote.md-focus::before,
+html[data-theme='dark'] .theme-doc-markdown blockquote:focus::before,
+html[data-theme='dark'] .theme-doc-markdown blockquote:hover::before {
     filter: grayscale(0);
     opacity: 1;
     transform: rotate(0);
     text-shadow: 0 0 10px var(--primary-color)
 }
 
-html[data-theme='dark'] .markdown a {
+html[data-theme='dark'] .theme-doc-markdown a {
     color: var(--primary-color);
     text-decoration: none;
     font-weight: 500;
@@ -749,7 +749,7 @@ html[data-theme='dark'] .markdown a {
     transition: all .2s ease
 }
 
-html[data-theme='dark'] .markdown p a:not(.md-toc-inner)::before {
+html[data-theme='dark'] .theme-doc-markdown p a:not(.md-toc-inner)::before {
     content: '';
     display: inline-block;
     width: 1em;
@@ -762,35 +762,35 @@ html[data-theme='dark'] .markdown p a:not(.md-toc-inner)::before {
     transition: transform .4s cubic-bezier(.25, .8, .25, 1)
 }
 
-html[data-theme='dark'] .markdown a:not(.md-toc-inner):hover {
+html[data-theme='dark'] .theme-doc-markdown a:not(.md-toc-inner):hover {
     color: #fff;
     background: 0 0;
     text-shadow: 0 0 5px var(--primary-color), 0 0 10px var(--primary-color);
     box-shadow: none
 }
 
-html[data-theme='dark'] .markdown a:hover:not(.md-toc-inner)::before {
+html[data-theme='dark'] .theme-doc-markdown a:hover:not(.md-toc-inner)::before {
     transform: rotate(180deg);
     background-color: #fff
 }
 
-html[data-theme='dark'] .markdown a:visited {
+html[data-theme='dark'] .theme-doc-markdown a:visited {
     color: var(--primary-color);
     text-shadow: 0 0 5px rgba(255, 85, 85, .6), 0 0 10px rgba(255, 85, 85, .3);
     opacity: .9
 }
 
-html[data-theme='dark'] .markdown a:visited:hover {
+html[data-theme='dark'] .theme-doc-markdown a:visited:hover {
     color: #fff;
     text-shadow: 0 0 5px var(--primary-color), 0 0 10px var(--primary-color);
     opacity: 1
 }
 
-html[data-theme='dark'] .markdown sup a::before {
+html[data-theme='dark'] .theme-doc-markdown sup a::before {
     content: none
 }
 
-html[data-theme='dark'] .markdown mark {
+html[data-theme='dark'] .theme-doc-markdown mark {
     background-color: transparent !important;
     color: color-mix(in srgb, var(--primary-color), #fff 20%);
     padding: 0 2px;
@@ -807,13 +807,13 @@ html[data-theme='dark'] .markdown mark {
     transition: background-size .4s cubic-bezier(.34, 1.56, .64, 1), background-image .4s ease, color .3s ease, text-shadow .3s ease, box-shadow .3s ease
 }
 
-html[data-theme='dark'] .markdown mark::after,
-html[data-theme='dark'] .markdown mark::before {
+html[data-theme='dark'] .theme-doc-markdown mark::after,
+html[data-theme='dark'] .theme-doc-markdown mark::before {
     content: none !important;
     display: none !important
 }
 
-html[data-theme='dark'] .markdown mark:hover {
+html[data-theme='dark'] .theme-doc-markdown mark:hover {
     background-size: 100% 100%;
     background-image: linear-gradient(to top, color-mix(in srgb, var(--primary-color), transparent 20%), color-mix(in srgb, var(--primary-color), transparent 80%));
     color: #fff !important;
@@ -824,7 +824,7 @@ html[data-theme='dark'] .markdown mark:hover {
     padding: 0 2px
 }
 
-html[data-theme='dark'] .markdown strong {
+html[data-theme='dark'] .theme-doc-markdown strong {
     color: var(--primary-color);
     font-weight: 700;
     display: inline;
@@ -836,7 +836,7 @@ html[data-theme='dark'] .markdown strong {
     transition: border-color .3s ease, text-shadow .3s ease, color .3s ease
 }
 
-html[data-theme='dark'] .markdown strong:hover {
+html[data-theme='dark'] .theme-doc-markdown strong:hover {
     text-shadow: var(--glow-shadow-text), 0 0 15px var(--primary-color);
     border-bottom-color: var(--primary-color)
 }
@@ -851,7 +851,7 @@ html[data-theme='dark'] .markdown strong:hover {
     }
 }
 
-html[data-theme='dark'] .markdown em {
+html[data-theme='dark'] .theme-doc-markdown em {
     font-style: italic;
     color: var(--secondary-color);
     text-decoration: none !important;
@@ -867,13 +867,13 @@ html[data-theme='dark'] .markdown em {
     z-index: 0
 }
 
-html[data-theme='dark'] .markdown em::after,
-html[data-theme='dark'] .markdown em::before {
+html[data-theme='dark'] .theme-doc-markdown em::after,
+html[data-theme='dark'] .theme-doc-markdown em::before {
     content: none !important;
     display: none !important
 }
 
-html[data-theme='dark'] .markdown em:hover {
+html[data-theme='dark'] .theme-doc-markdown em:hover {
     color: var(--primary-color);
     font-weight: 400;
     -webkit-text-stroke: .5px var(--primary-color);
@@ -882,21 +882,21 @@ html[data-theme='dark'] .markdown em:hover {
     animation: stitchFlow .5s linear infinite
 }
 
-html[data-theme='dark'] .markdown del {
+html[data-theme='dark'] .theme-doc-markdown del {
     text-decoration: line-through;
     text-decoration-color: var(--primary-color);
     color: #888;
     transition: all .3s ease
 }
 
-html[data-theme='dark'] .markdown del:hover {
+html[data-theme='dark'] .theme-doc-markdown del:hover {
     opacity: 1;
     color: var(--primary-color);
     text-decoration-color: var(--secondary-color);
     cursor: not-allowed
 }
 
-html[data-theme='dark'] .markdown hr {
+html[data-theme='dark'] .theme-doc-markdown hr {
     border: none;
     height: 1px;
     background: linear-gradient(90deg, transparent, var(--primary-color), transparent);
@@ -907,7 +907,7 @@ html[data-theme='dark'] .markdown hr {
     transition: all .3s ease
 }
 
-html[data-theme='dark'] .markdown hr::after {
+html[data-theme='dark'] .theme-doc-markdown hr::after {
     content: '';
     position: absolute;
     left: 50%;
@@ -920,23 +920,23 @@ html[data-theme='dark'] .markdown hr::after {
     transition: all .3s ease
 }
 
-html[data-theme='dark'] .markdown hr:hover {
+html[data-theme='dark'] .theme-doc-markdown hr:hover {
     opacity: 1;
     background: linear-gradient(90deg, transparent, var(--primary-color), transparent)
 }
 
-html[data-theme='dark'] .markdown hr:hover::after {
+html[data-theme='dark'] .theme-doc-markdown hr:hover::after {
     border-color: var(--primary-color);
     background-color: var(--primary-color);
     box-shadow: 0 0 10px var(--primary-color);
     transform: translate(-50%, -50%) rotate(225deg) scale(1.5)
 }
 
-html[data-theme='dark'] .markdown p:has(img) {
+html[data-theme='dark'] .theme-doc-markdown p:has(img) {
     text-align: center
 }
 
-html[data-theme='dark'] .markdown img {
+html[data-theme='dark'] .theme-doc-markdown img {
     border-radius: 12px;
     display: inline-block;
     margin: 15px 5px;
@@ -948,19 +948,19 @@ html[data-theme='dark'] .markdown img {
     cursor: zoom-in
 }
 
-html[data-theme='dark'] .markdown p>img:only-child {
+html[data-theme='dark'] .theme-doc-markdown p>img:only-child {
     display: block;
     margin: 20px auto
 }
 
-html[data-theme='dark'] .markdown img:hover {
+html[data-theme='dark'] .theme-doc-markdown img:hover {
     filter: brightness(1.05) contrast(1.05);
     transform: scale(1.05);
     box-shadow: 0 12px 30px -4px var(--element-color-soo-shallow);
     z-index: 10
 }
 
-html[data-theme='dark'] .markdown figcaption {
+html[data-theme='dark'] .theme-doc-markdown figcaption {
     display: block;
     margin-top: 12px;
     font-size: 13px;
@@ -971,8 +971,8 @@ html[data-theme='dark'] .markdown figcaption {
     transition: color .3s ease
 }
 
-html[data-theme='dark'] .markdown figure:hover>figcaption,
-html[data-theme='dark'] .markdown p:hover>img+figcaption {
+html[data-theme='dark'] .theme-doc-markdown figure:hover>figcaption,
+html[data-theme='dark'] .theme-doc-markdown p:hover>img+figcaption {
     color: var(--element-color-deep)
 }
 
@@ -1020,7 +1020,7 @@ pre.md-meta-block:hover::after {
     box-shadow: 0 0 15px var(--primary-color)
 }
 
-html[data-theme='dark'] .markdown code:not(.md-fencescode) {
+html[data-theme='dark'] .theme-doc-markdown code:not(.md-fencescode) {
     font-family: CascadiaCode, "Lucida Console", Consolas, Courier, monospace;
     font-size: .9em;
     letter-spacing: .5px;
@@ -1034,7 +1034,7 @@ html[data-theme='dark'] .markdown code:not(.md-fencescode) {
     transition: all .2s cubic-bezier(.34, 1.56, .64, 1)
 }
 
-html[data-theme='dark'] .markdown code:not(.md-fencescode):hover {
+html[data-theme='dark'] .theme-doc-markdown code:not(.md-fencescode):hover {
     background-color: var(--primary-color);
     color: #fff;
     border-color: var(--primary-color);
@@ -1524,7 +1524,7 @@ pre.CodeMirror-line {
     font-weight: 700
 }
 
-html[data-theme='dark'] .markdown kbd {
+html[data-theme='dark'] .theme-doc-markdown kbd {
     background-color: #333;
     color: var(--text-color);
     font-family: CascadiaCode, "Lucida Console", Consolas, Courier, monospace;
@@ -1542,14 +1542,14 @@ html[data-theme='dark'] .markdown kbd {
     vertical-align: middle
 }
 
-html[data-theme='dark'] .markdown kbd:hover {
+html[data-theme='dark'] .theme-doc-markdown kbd:hover {
     transform: translateY(2px);
     box-shadow: 0 2px 0 #222, 0 3px 3px rgba(0, 0, 0, .4);
     color: var(--primary-color);
     border-color: var(--primary-color)
 }
 
-html[data-theme='dark'] .markdown table {
+html[data-theme='dark'] .theme-doc-markdown table {
     border-collapse: separate;
     border-spacing: 0;
     width: 100%;
@@ -1564,8 +1564,8 @@ html[data-theme='dark'] .markdown table {
     line-height: 1.6
 }
 
-html[data-theme='dark'] .markdown table td,
-html[data-theme='dark'] .markdown table th {
+html[data-theme='dark'] .theme-doc-markdown table td,
+html[data-theme='dark'] .theme-doc-markdown table th {
     padding: 10px 15px;
     color: var(--text-color);
     border-right: 1px solid color-mix(in srgb, #fff, transparent 95%);
@@ -1573,16 +1573,16 @@ html[data-theme='dark'] .markdown table th {
     transition: all .2s ease
 }
 
-html[data-theme='dark'] .markdown table td:last-child,
-html[data-theme='dark'] .markdown table th:last-child {
+html[data-theme='dark'] .theme-doc-markdown table td:last-child,
+html[data-theme='dark'] .theme-doc-markdown table th:last-child {
     border-right: none
 }
 
-html[data-theme='dark'] .markdown table tr:last-child td {
+html[data-theme='dark'] .theme-doc-markdown table tr:last-child td {
     border-bottom: none
 }
 
-html[data-theme='dark'] .markdown table th {
+html[data-theme='dark'] .theme-doc-markdown table th {
     background-color: color-mix(in srgb, var(--primary-color), transparent 95%);
     color: var(--primary-color);
     font-weight: 700;
@@ -1590,11 +1590,11 @@ html[data-theme='dark'] .markdown table th {
     border-bottom: 1px solid color-mix(in srgb, var(--primary-color), transparent 85%)
 }
 
-html[data-theme='dark'] .markdown table tbody tr:hover td {
+html[data-theme='dark'] .theme-doc-markdown table tbody tr:hover td {
     background-color: rgba(255, 255, 255, .03)
 }
 
-html[data-theme='dark'] .markdown table tbody td:hover {
+html[data-theme='dark'] .theme-doc-markdown table tbody td:hover {
     background-color: color-mix(in srgb, var(--primary-color), transparent 85%);
     color: #fff;
     box-shadow: inset 0 0 0 1px var(--primary-color);
@@ -1602,19 +1602,19 @@ html[data-theme='dark'] .markdown table tbody td:hover {
     cursor: default
 }
 
-html[data-theme='dark'] .markdown .footnote-word {
+html[data-theme='dark'] .theme-doc-markdown .footnote-word {
     font-weight: 400;
     color: #888
 }
 
-html[data-theme='dark'] .markdown .footnote-ref {
+html[data-theme='dark'] .theme-doc-markdown .footnote-ref {
     font-weight: 700;
     color: var(--accent-color);
     cursor: pointer;
     margin-left: 2px
 }
 
-html[data-theme='dark'] .markdown .footnote-item em {
+html[data-theme='dark'] .theme-doc-markdown .footnote-item em {
     font-size: 14px;
     color: #888;
     font-style: italic;
@@ -1712,7 +1712,7 @@ html[data-theme='dark'] .markdown .footnote-item em {
 }
 
 .md-alert.md-alert-note::after {
-    content: "ðŸ“";
+    content: "📝";
     color: var(--secondary-color)
 }
 
@@ -1731,7 +1731,7 @@ html[data-theme='dark'] .markdown .footnote-item em {
 }
 
 .md-alert.md-alert-tip::after {
-    content: "ðŸ’¡";
+    content: "💡";
     color: var(--accent-color)
 }
 
@@ -1750,7 +1750,7 @@ html[data-theme='dark'] .markdown .footnote-item em {
 }
 
 .md-alert.md-alert-warning::after {
-    content: "âš ï¸";
+    content: "⚠️";
     color: #ffb86c
 }
 
@@ -1769,7 +1769,7 @@ html[data-theme='dark'] .markdown .footnote-item em {
 }
 
 .md-alert.md-alert-important::after {
-    content: "ðŸ”¥";
+    content: "🔥";
     color: var(--primary-color)
 }
 
@@ -1788,7 +1788,7 @@ html[data-theme='dark'] .markdown .footnote-item em {
 }
 
 .md-alert.md-alert-caution::after {
-    content: "ðŸ’€";
+    content: "💀";
     color: #d63031
 }
 
@@ -1817,7 +1817,7 @@ html[data-theme='dark'] .markdown .footnote-item em {
 }
 
 .md-toc:before {
-    content: "Má»¥c lá»¥c";
+    content: "Mục lục";
     display: block;
     text-align: center;
     font-size: 1.4rem;
@@ -2214,7 +2214,7 @@ div.outline-item-active {
 }
 
 #outline-content .outline-item-active::after {
-    content: "âœ¦";
+    content: "✦";
     position: absolute;
     right: 10px;
     top: 50%;
@@ -2252,7 +2252,7 @@ div.outline-item-active {
 }
 
 .typora-export-sidebar::before {
-    content: "ç›®å½•";
+    content: "目录";
     display: block;
     position: absolute;
     top: 25px;
@@ -2338,7 +2338,7 @@ div.outline-item-active {
 }
 
 .typora-export .outline-expander::before {
-    content: "â–¸" !important;
+    content: "▸" !important;
     font-family: Arial, sans-serif !important;
     font-size: 14px !important;
     display: inline-block
@@ -2346,7 +2346,7 @@ div.outline-item-active {
 
 .typora-export .outline-expander:hover::before,
 .typora-export .outline-item-open>.outline-item>.outline-expander::before {
-    content: "â–¾" !important;
+    content: "▾" !important;
     color: var(--primary-color) !important
 }
 
@@ -2382,7 +2382,7 @@ div.outline-item-active {
 }
 
 .typora-export-sidebar .outline-item-wrapper.outline-item-active>.outline-item::after {
-    content: "âœ¦";
+    content: "✦";
     position: static !important;
     transform: none !important;
     margin-left: 8px !important;
@@ -2401,7 +2401,7 @@ div.outline-item-active {
     color: var(--text-color)
 }
 
-.typora-export html[data-theme='dark'] .markdown {
+.typora-export html[data-theme='dark'] .theme-doc-markdown {
     margin: 20px auto;
     max-width: 950px;
     width: 90%;
@@ -2411,7 +2411,7 @@ div.outline-item-active {
     padding: 60px 80px
 }
 
-.typora-export-sidebar+html[data-theme='dark'] .markdown {
+.typora-export-sidebar+html[data-theme='dark'] .theme-doc-markdown {
     margin-left: 350px;
     margin-right: 20px;
     margin-top: 10px;
@@ -2448,8 +2448,8 @@ div.outline-item-active {
         display: none
     }
 
-    .typora-export html[data-theme='dark'] .markdown,
-    .typora-export-sidebar+html[data-theme='dark'] .markdown {
+    .typora-export html[data-theme='dark'] .theme-doc-markdown,
+    .typora-export-sidebar+html[data-theme='dark'] .theme-doc-markdown {
         margin: 0;
         border-radius: 0;
         width: 100%;
@@ -2473,7 +2473,7 @@ div.outline-item-active {
         width: 100% !important
     }
 
-    .typora-export html[data-theme='dark'] .markdown {
+    .typora-export html[data-theme='dark'] .theme-doc-markdown {
         margin: 0 auto !important;
         padding: 0 !important;
         width: 100% !important;
@@ -2488,7 +2488,7 @@ div.outline-item-active {
         print-color-adjust: exact !important
     }
 
-    html[data-theme='dark'] .markdown::before {
+    html[data-theme='dark'] .theme-doc-markdown::before {
         display: block !important;
         opacity: .1 !important;
         top: 0 !important;
@@ -2555,11 +2555,11 @@ div.outline-item-active {
         text-shadow: none
     }
 
-    html[data-theme='dark'] .markdown strong {
+    html[data-theme='dark'] .theme-doc-markdown strong {
         text-shadow: none
     }
 
-    html[data-theme='dark'] .markdown li:before {
+    html[data-theme='dark'] .theme-doc-markdown li:before {
         border-color: transparent
     }
 }
@@ -2569,7 +2569,7 @@ div.outline-item-active {
     color: inherit
 }
 
-html[data-theme='dark'] .markdown,
+html[data-theme='dark'] .theme-doc-markdown,
 [contenteditable],
 input,
 textarea {
@@ -2941,4 +2941,8 @@ body .md-table-resize-popover input:focus {
     background-color: color-mix(in srgb, var(--primary-color), transparent 95%) !important;
     box-shadow: 0 0 0 3px color-mix(in srgb, var(--primary-color), transparent 80%) !important
 }
+
+
+
+
 

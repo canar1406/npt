@@ -1,6 +1,6 @@
-﻿@import url(./phycat/phycat.dark.css);
+@import url(./phycat/phycat.light.css);
 
-html[data-theme='dark'] {
+html[data-theme='light'] {
   /* 标题后小图标，借鉴自思源笔记主题——Savor */
   --h1-icon-shape: url("data:image/svg+xml;utf8,<svg fill='rgba(255, 176, 176, 0.5)' height='24' viewBox='0 0 32 32' width='24' xmlns='http://www.w3.org/2000/svg'><path d='M4.8 29.714v0c-1.371 0-2.514-1.143-2.514-2.514v0c0-1.371 1.143-2.514 2.514-2.514v0c1.371 0 2.514 1.143 2.514 2.514v0c0.114 1.371-1.029 2.514-2.514 2.514z'/></svg>") no-repeat center;
   --h2-icon-shape: url("data:image/svg+xml;utf8,<svg fill='rgba(255, 176, 176, 0.5)' height='24' viewBox='0 0 32 32' width='24' xmlns='http://www.w3.org/2000/svg'><path d='M11.429 25.143c-1.257 0-2.286 1.029-2.286 2.286s1.029 2.286 2.286 2.286 2.286-1.029 2.286-2.286-1.029-2.286-2.286-2.286zM4.571 18.286c-1.257 0-2.286 1.029-2.286 2.286s1.029 2.286 2.286 2.286 2.286-1.029 2.286-2.286-1.029-2.286-2.286-2.286z'/></svg>") no-repeat center;
@@ -26,10 +26,8 @@ html[data-theme='dark'] {
   --bg-shape-none: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=");
 
   /* 文档背景样式  none 无背景*/
-  --bg-style: radial-gradient(#ffffff 1px, transparent 1px);
-  /* --- 页面纹理 --- */
-  --texture-mask-color: #bd93f9;
-  --texture-opacity: 0.05;
+  --bg-style: var(--bg-shape-cross);
+  /* --bg-style:none; */
 
   /* 自动编号格式设置 无需自动编号可全部注释掉或部分注释掉*/
   /* --autonum-h1: counter(h1) ". ";
@@ -40,70 +38,45 @@ html[data-theme='dark'] {
   --autonum-h6: counter(h1) "." counter(h2) "." counter(h3) "." counter(h4) "." counter(h5) "." counter(h6) ". "; */
 
   /* 下面是文章内Toc目录自动编号，与上面一样即可 */
-  /*--autonum-h1toc: counter(h1toc) ". ";
+  /* --autonum-h1toc: counter(h1toc) ". ";
   --autonum-h2toc: counter(h1toc) "." counter(h2toc) ". ";
   --autonum-h3toc: counter(h1toc) "." counter(h2toc) "." counter(h3toc) ". ";
   --autonum-h4toc: counter(h1toc) "." counter(h2toc) "." counter(h3toc) "." counter(h4toc) ". ";
   --autonum-h5toc: counter(h1toc) "." counter(h2toc) "." counter(h3toc) "." counter(h4toc) "." counter(h5toc) ". ";
   --autonum-h6toc: counter(h1toc) "." counter(h2toc) "." counter(h3toc) "." counter(h4toc) "." counter(h5toc) "." counter(h6toc) ". "; */
 
+
   /* 文章区域的最大宽度，可以是多少px也可以是百分比 */
   --max-width: 950px; 
 
-/* --- 基础背景与文字 --- */
-  --bg-color: #0f111a;            /* 午夜深蓝 (Midnight Abyss) */
-  --text-color: #d6deeb;          /* 冰蓝白 (Ice White) */
-  --text-color-secondary: #7e8c9f; /* 蓝灰文字 (Steel Blue) */
+--head-title-color: #3498db;
+  
+  /* H2 渐变 */
+  --head-title-h2-color: #fff;
+  --head-title-h2-background: linear-gradient(to right, #85c1e9, #3498db, #85c1e9);
+  
+  /* 元素颜色 */
+  --element-color: #3498db;             /* 核心蓝 */
+  --element-color-deep: #2980b9;        /* 深蓝 */
+  --element-color-shallow: #aed6f1;     /* 浅蓝 */
+  --element-color-so-shallow: #eaf2f8;  /* 很浅蓝 */
+  --element-color-soo-shallow: #f4faff; /* 极浅蓝 */
 
-  /* --- 核心品牌色 --- */
-  --primary-color: #00f3ff;       /* 电光青 (Electric Cyan) - 核心高亮 */
-  --secondary-color: #2979ff;     /* 深海蓝 (Ocean Blue) - 辅助 */
-  --accent-color: #d500f9;        /* 全息紫 (Holo Purple) - 强调点缀 */
-  --border-color: #1f2233;        /* 暗蓝边框 */
+  /* 毛玻璃底色 透明度一定要很低 */
+  --glass-bg-color:#cee6fa2b;
 
-  /* --- 光晕特效变量 --- */
-  --glow-color: rgba(0, 243, 255, 0.5);
-  --glow-shadow-text: 0 0 8px var(--glow-color);
-  --glow-shadow-box: 0 0 8px var(--glow-color);
-  --hover-background-color: #00f3ff; /* 电光青 */
-  --select-text-bg-color: rgba(0, 243, 255, 0.3);
+  /* 行内代码：深海蓝 */
+  --element-color-linecode: #1a5276;
+  --element-color-linecode-background: #ebf5fb;
 
-  /* --- H1 标题 --- */
-  --h1-color: var(--text-color);
-  --h1-underline-color: var(--primary-color);
+  /* UI 颜色 */
+  --appui-color: #3498db;
+  --appui-color-icon: #3498db;
+  --appui-color-text: #2c3e50;
+  --primary-color: #3498db;
 
-  /* --- H2 标题 (Fusion Glass) --- */
-  /* 背景：青色到透明径向渐变 */
-  --h2-bg-image: radial-gradient(ellipse at center bottom, rgba(0, 243, 255, 0.15), transparent 70%);
-
-  /* 其他变量 */
-  --code-block-bg: rgba(15, 17, 26, 0.6); /* 深蓝背景 */
-  --glass-border-color: rgba(0, 243, 255, 0.1);
-
-  /* --- 代码高亮 (Material Ocean / Night Owl 风格) --- */
-  --code-keyword: #c792ea;        /* 关键字 -> 紫色 */
-  --code-variable: #d6deeb;       /* 变量 -> 冰白 */
-  --code-function: #82aaff;       /* 函数 -> 软蓝 */
-  --code-param: #7fdbca;          /* 参数 -> 青绿 */
-  --code-string: #ecc48d;         /* 字符串 -> 淡金 */
-  --code-comment: #637777;        /* 注释 -> 灰青 */
-  --code-type: #addb67;           /* 类型 -> 嫩绿 */
-  --code-property: #80cbc4;       /* 属性 -> 蓝绿 */
-  --code-number: #f78c6c;         /* 数字 -> 橙 */
-  --code-meta: #7fdbca;           /* 元数据 -> 青 */
-  --code-selected-bg: #1d3b53;    /* 选中背景 -> 深蓝块 */
-
-  /* --- UI 控件/原生菜单覆盖 --- */
-  --active-file-bg-color: color-mix(in srgb, var(--primary-color), transparent 85%);
-  --active-file-text-color: #ffffff;
-  --item-hover-bg-color: rgba(0, 243, 255, 0.08);
-  --menu-divider-color: rgba(0, 243, 255, 0.1);
-  --window-border: 1px solid var(--primary-color) !important;
-  --rawblock-edit-panel-bd: var(--item-hover-bg-color);
-  --mermaid-theme: night;
+  --rawblock-edit-panel-bd: var(--element-color-soo-shallow);
 }
-
-
 /* Tránh bị cắt đôi khối (blockquote, code, table) khi xuất PDF */
 @media print {
     blockquote, pre, table, figure, img {
@@ -121,13 +94,13 @@ html[data-theme='dark'] {
 }
 
 /* Đổi tiêu đề TOC từ tiếng Trung sang tiếng Việt */
-html[data-theme='dark'] .md-toc::before,
-html[data-theme='dark'] .md-toc-content::before {
+.md-toc::before,
+.md-toc-content::before {
     content: "Mục lục" !important;
 }
 
 /* Tạo khung viền và đổ bóng cho khối Mục lục (TOC) */
-html[data-theme='dark'] .md-toc {
+.md-toc {
     border: 2px solid var(--element-color-shallow); /* Dùng màu viền xanh nhạt của theme */
     border-radius: 12px; /* Bo tròn các góc cho mềm mại */
     padding: 25px 30px; /* Tạo khoảng trống giữa chữ và khung viền */
@@ -136,16 +109,16 @@ html[data-theme='dark'] .md-toc {
 }
 
 /* (Tùy chọn) Ẩn đường gạch ngang đứt nét dưới chữ Mục lục nếu bạn thấy nó bị thừa khi đã có khung */
-html[data-theme='dark'] .md-toc:after {
+.md-toc:after {
     display: none !important;
 }
 
 /* Nút bấm chuyển trang (Bắt chết mọi link chuyển đề) */
-html[data-theme='dark'] .theme-doc-markdown a[href="thpt.md"], 
-html[data-theme='dark'] .theme-doc-markdown a[href="thpt.html"],
-html[data-theme='dark'] .theme-doc-markdown a[href="index.html"],
-html[data-theme='dark'] .theme-doc-markdown a[href="thcs.md"],
-html[data-theme='dark'] .theme-doc-markdown a[href="thcs.html"] {
+html[data-theme='light'] .theme-doc-markdown a[href="thpt.md"], 
+html[data-theme='light'] .theme-doc-markdown a[href="thpt.html"],
+html[data-theme='light'] .theme-doc-markdown a[href="index.html"],
+html[data-theme='light'] .theme-doc-markdown a[href="thcs.md"],
+html[data-theme='light'] .theme-doc-markdown a[href="thcs.html"] {
     display: inline-block !important;
     background-color: #11aa63 !important; 
     color: #ffffff !important; 
@@ -158,13 +131,12 @@ html[data-theme='dark'] .theme-doc-markdown a[href="thcs.html"] {
     transition: all 0.3s ease !important; 
 }
 
-html[data-theme='dark'] .theme-doc-markdown a[href="thpt.md"]:hover, 
-html[data-theme='dark'] .theme-doc-markdown a[href="thpt.html"]:hover,
-html[data-theme='dark'] .theme-doc-markdown a[href="index.html"]:hover,
-html[data-theme='dark'] .theme-doc-markdown a[href="thcs.md"]:hover,
-html[data-theme='dark'] .theme-doc-markdown a[href="thcs.html"]:hover {
+html[data-theme='light'] .theme-doc-markdown a[href="thpt.md"]:hover, 
+html[data-theme='light'] .theme-doc-markdown a[href="thpt.html"]:hover,
+html[data-theme='light'] .theme-doc-markdown a[href="index.html"]:hover,
+html[data-theme='light'] .theme-doc-markdown a[href="thcs.md"]:hover,
+html[data-theme='light'] .theme-doc-markdown a[href="thcs.html"]:hover {
     background-color: #008145 !important; 
     box-shadow: 0 6px 16px rgba(0, 129, 69, 0.4) !important;
     transform: translateY(-3px) !important; 
 }
-
