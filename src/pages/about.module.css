@@ -769,7 +769,7 @@
   content: '"';
   position: absolute;
   top: -10px;
-  left: 20px;
+  left: 0px;
   font-size: 4rem;
   color: var(--ifm-color-primary);
   font-family: serif;
@@ -976,4 +976,38 @@
     height: 50px;
     font-size: 1.5rem;
   }
+}
+
+.missionIcon,
+.contactIcon {
+  font-size: 2.5rem !important;
+  line-height: 1 !important;
+  height: 2.5rem !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+}
+
+.titleIcon {
+  line-height: 1 !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+}
+
+.missionIcon,
+.contactIcon {
+  font-size: 2.5rem !important;
+  line-height: 1 !important;
+  height: 2.5rem !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+}
+
+.titleIcon {
+  line-height: 1 !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
 }

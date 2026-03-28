@@ -112,7 +112,7 @@ y = ax² + bx + c
 - Collision detection
 
 ### Thiên văn học
--궤도 hành tinh
+- hành tinh
 - Tính toán khoảng cách
 - Navigation
 
