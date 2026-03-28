@@ -1,4 +1,4 @@
-/**
+﻿/**
  * Any CSS included here will be global. The classic template
  * bundles Infima by default. Infima is a CSS framework designed to
  * work well for content-centric websites.
@@ -181,7 +181,7 @@ html {
 
   .navbar-sidebar__items {
     height: calc(100vh - 60px);
-    /* overflow-y: auto; <-- DÒNG NÀY ĐÃ XÓA THEO PHÁT HIỆN CỦA BẠN */
+    /* overflow-y: auto; <-- DÃ’NG NÃ€Y ÄÃƒ XÃ“A THEO PHÃT HIá»†N Cá»¦A Báº N */
     padding-bottom: 20px;
   }
 
@@ -203,28 +203,28 @@ html {
     transform: scale(1);
   }
 
-  /* Ẩn hamburger khi menu mở */
+  /* áº¨n hamburger khi menu má»Ÿ */
   .navbar-sidebar--show .navbar__toggle {
     opacity: 0;
     transform: scale(0.8);
     pointer-events: none;
   }
 
-  /* Hiệu ứng mượt mà cho menu sidebar - an toàn */
+  /* Hiá»‡u á»©ng mÆ°á»£t mÃ  cho menu sidebar - an toÃ n */
   .navbar-sidebar {
     max-height: 100vh;
-    /* overflow-y: auto; <-- DÒNG NÀY CŨNG ĐÃ XÓA */
+    /* overflow-y: auto; <-- DÃ’NG NÃ€Y CÅ¨NG ÄÃƒ XÃ“A */
     z-index: 999;
     transform: translateX(-100%);
     transition: transform 0.3s ease-in-out;
   }
 
-  /* Menu hiện ra */
+  /* Menu hiá»‡n ra */
   .navbar-sidebar--show .navbar-sidebar {
     transform: translateX(0);
   }
 
-  /* Fix menu backdrop - an toàn */
+  /* Fix menu backdrop - an toÃ n */
   .navbar-sidebar__backdrop {
     z-index: 998;
     opacity: 0;
@@ -266,7 +266,7 @@ html {
     flex: 1;
   }
 
-  /* Hamburger toggle với hiệu ứng mượt mà */
+  /* Hamburger toggle vá»›i hiá»‡u á»©ng mÆ°á»£t mÃ  */
   .navbar__toggle {
     background: none;
     border: none;
@@ -279,14 +279,14 @@ html {
     z-index: 1001;
   }
 
-  /* Hiệu ứng hover cho hamburger */
+  /* Hiá»‡u á»©ng hover cho hamburger */
   .navbar__toggle:hover {
     background: rgba(var(--ifm-color-primary-rgb), 0.1);
     border-radius: 8px;
     transform: scale(1.05);
   }
 
-  /* Fix mobile menu container với hiệu ứng mượt mà */
+  /* Fix mobile menu container vá»›i hiá»‡u á»©ng mÆ°á»£t mÃ  */
   .navbar-sidebar__brand {
     display: flex;
     align-items: center;
@@ -295,7 +295,7 @@ html {
     border-bottom: 1px solid var(--ifm-color-emphasis-200);
   }
 
-  /* Nút đóng menu với hiệu ứng */
+  /* NÃºt Ä‘Ã³ng menu vá»›i hiá»‡u á»©ng */
   .navbar-sidebar__close {
     background: none;
     border: none;
@@ -308,13 +308,13 @@ html {
     transform: scale(0.8);
   }
 
-  /* Hiện nút đóng khi menu mở */
+  /* Hiá»‡n nÃºt Ä‘Ã³ng khi menu má»Ÿ */
   .navbar-sidebar--show .navbar-sidebar__close {
     opacity: 1;
     transform: scale(1);
   }
 
-  /* Hiệu ứng hover cho nút đóng */
+  /* Hiá»‡u á»©ng hover cho nÃºt Ä‘Ã³ng */
   .navbar-sidebar__close:hover {
     background: rgba(var(--ifm-color-primary-rgb), 0.1);
     transform: scale(1.05);
@@ -349,7 +349,7 @@ html {
   .navbar-sidebar__items {
     height: calc(100vh - 80px);
     height: calc(100dvh - 80px);
-    /* overflow-y: auto; <-- DÒNG NÀY CŨNG ĐÃ XÓA */
+    /* overflow-y: auto; <-- DÃ’NG NÃ€Y CÅ¨NG ÄÃƒ XÃ“A */
     -webkit-overflow-scrolling: touch;
     transition: all 0.3s ease-in-out;
   }
@@ -392,17 +392,17 @@ html {
 .feature:nth-child(3) {
   animation: fadeIn 0.6s ease-out 0.5s both;
 }
-/* Loại bỏ hiệu ứng staggered phức tạp - giữ menu đơn giản */
+/* Loáº¡i bá» hiá»‡u á»©ng staggered phá»©c táº¡p - giá»¯ menu Ä‘Æ¡n giáº£n */
 .navbar-sidebar .menu__list-item {
   transition: all 0.3s ease-in-out;
 }
-/* Hiệu ứng pulse cho hamburger khi focus */
+/* Hiá»‡u á»©ng pulse cho hamburger khi focus */
 .navbar__toggle:focus {
   outline: none;
   box-shadow: 0 0 0 2px rgba(var(--ifm-color-primary-rgb), 0.3);
   border-radius: 8px;
 }
-/* Hiệu ứng ripple khi click hamburger */
+/* Hiá»‡u á»©ng ripple khi click hamburger */
 .navbar__toggle::after {
   content: '';
   position: absolute;
@@ -420,25 +420,25 @@ html {
   width: 40px;
   height: 40px;
 }
-/* Hiệu ứng backdrop đơn giản */
+/* Hiá»‡u á»©ng backdrop Ä‘Æ¡n giáº£n */
 .navbar-sidebar__backdrop {
   transition: opacity 0.3s ease-in-out;
 }
 .navbar-sidebar--show .navbar-sidebar__backdrop {
   opacity: 1;
 }
-/* Cải thiện hiệu ứng slide cho menu - an toàn */
+/* Cáº£i thiá»‡n hiá»‡u á»©ng slide cho menu - an toÃ n */
 .navbar-sidebar {
   transition: transform 0.3s ease-in-out;
 }
 .navbar-sidebar--show .navbar-sidebar {
   transform: translateX(0);
 }
-/* Hiệu ứng cho brand logo trong sidebar - đơn giản */
+/* Hiá»‡u á»©ng cho brand logo trong sidebar - Ä‘Æ¡n giáº£n */
 .navbar-sidebar__brand {
   transition: all 0.3s ease-in-out;
 }
-/* Hiệu ứng đơn giản cho hamburger và close button */
+/* Hiá»‡u á»©ng Ä‘Æ¡n giáº£n cho hamburger vÃ  close button */
 .navbar__toggle {
   transition: all 0.3s ease-in-out;
 }
@@ -507,53 +507,53 @@ html {
 }
 
 
- / *   - - -   M a p p i n g   P h y c a t   A b y s s   t o   D o c u s a u r u s   D o c s   - - -   * / 
- [ d a t a - t h e m e = ' d a r k ' ]   { 
-         - - i f m - b a c k g r o u n d - c o l o r :   v a r ( - - b g - c o l o r ) ; 
-         - - i f m - f o n t - c o l o r - b a s e :   v a r ( - - t e x t - c o l o r ) ; 
-         - - i f m - c o l o r - p r i m a r y :   v a r ( - - p r i m a r y - c o l o r ) ; 
-         - - i f m - h e a d i n g - c o l o r :   v a r ( - - h 1 - c o l o r ,   v a r ( - - t e x t - c o l o r ) ) ; 
-         - - i f m - c o d e - b a c k g r o u n d :   v a r ( - - c o d e - b l o c k - b g ) ; 
- } 
- 
- . t h e m e - d o c - m a r k d o w n   { 
-         m a x - w i d t h :   v a r ( - - m a x - w i d t h )   ! i m p o r t a n t ; 
-         m a r g i n :   0   a u t o ; 
- } 
- 
- . t h e m e - d o c - m a r k d o w n   h 1   { 
-         c o l o r :   v a r ( - - h 1 - c o l o r ) ; 
-         b o r d e r - b o t t o m :   2 p x   s o l i d   v a r ( - - h 1 - u n d e r l i n e - c o l o r ) ; 
-         p a d d i n g - b o t t o m :   8 p x ; 
- } 
- . t h e m e - d o c - m a r k d o w n   h 1 : : a f t e r   { 
-         c o n t e n t :   v a r ( - - h 1 - i c o n - s h a p e ) ; 
-         d i s p l a y :   i n l i n e - b l o c k ; 
-         w i d t h :   2 4 p x ;   h e i g h t :   2 4 p x ; 
-         m a r g i n - l e f t :   8 p x ; 
-         v e r t i c a l - a l i g n :   m i d d l e ; 
- } 
- 
- . t h e m e - d o c - m a r k d o w n   h 2   { 
-         b a c k g r o u n d :   v a r ( - - h 2 - b g - i m a g e ) ; 
-         p a d d i n g :   1 0 p x ; 
-         b o r d e r - r a d i u s :   8 p x ; 
- } 
- . t h e m e - d o c - m a r k d o w n   h 2 : : a f t e r   { 
-         c o n t e n t :   v a r ( - - h 2 - i c o n - s h a p e ) ; 
-         d i s p l a y :   i n l i n e - b l o c k ; 
-         w i d t h :   2 4 p x ;   h e i g h t :   2 4 p x ; 
-         m a r g i n - l e f t :   8 p x ; 
-         v e r t i c a l - a l i g n :   m i d d l e ; 
- } 
- 
- . t h e m e - d o c - m a r k d o w n   h 3 : : a f t e r   {   c o n t e n t :   v a r ( - - h 3 - i c o n - s h a p e ) ;   d i s p l a y :   i n l i n e - b l o c k ;   w i d t h :   2 4 p x ;   h e i g h t :   2 4 p x ;   m a r g i n - l e f t :   8 p x ;   v e r t i c a l - a l i g n :   m i d d l e ;   } 
- . t h e m e - d o c - m a r k d o w n   h 4 : : a f t e r   {   c o n t e n t :   v a r ( - - h 4 - i c o n - s h a p e ) ;   d i s p l a y :   i n l i n e - b l o c k ;   w i d t h :   2 4 p x ;   h e i g h t :   2 4 p x ;   m a r g i n - l e f t :   8 p x ;   v e r t i c a l - a l i g n :   m i d d l e ;   } 
- . t h e m e - d o c - m a r k d o w n   h 5 : : a f t e r   {   c o n t e n t :   v a r ( - - h 5 - i c o n - s h a p e ) ;   d i s p l a y :   i n l i n e - b l o c k ;   w i d t h :   2 4 p x ;   h e i g h t :   2 4 p x ;   m a r g i n - l e f t :   8 p x ;   v e r t i c a l - a l i g n :   m i d d l e ;   } 
- . t h e m e - d o c - m a r k d o w n   h 6 : : a f t e r   {   c o n t e n t :   v a r ( - - h 6 - i c o n - s h a p e ) ;   d i s p l a y :   i n l i n e - b l o c k ;   w i d t h :   2 4 p x ;   h e i g h t :   2 4 p x ;   m a r g i n - l e f t :   8 p x ;   v e r t i c a l - a l i g n :   m i d d l e ;   } 
- 
- . t h e m e - d o c - m a r k d o w n   p ,   . t h e m e - d o c - m a r k d o w n   l i   { 
-         c o l o r :   v a r ( - - t e x t - c o l o r ) ; 
- } 
-  
- 
+/* --- Mapping Phycat Abyss to Docusaurus Docs --- */
+[data-theme='dark'] {
+    --ifm-background-color: var(--bg-color);
+    --ifm-font-color-base: var(--text-color);
+    --ifm-color-primary: var(--primary-color);
+    --ifm-heading-color: var(--h1-color, var(--text-color));
+    --ifm-code-background: var(--code-block-bg);
+}
+
+.theme-doc-markdown {
+    max-width: var(--max-width) !important;
+    margin: 0 auto;
+}
+
+.theme-doc-markdown h1 {
+    color: var(--h1-color);
+    border-bottom: 2px solid var(--h1-underline-color);
+    padding-bottom: 8px;
+}
+.theme-doc-markdown h1::after {
+    content: var(--h1-icon-shape);
+    display: inline-block;
+    width: 24px; height: 24px;
+    margin-left: 8px;
+    vertical-align: middle;
+}
+
+.theme-doc-markdown h2 {
+    background: var(--h2-bg-image);
+    padding: 10px;
+    border-radius: 8px;
+}
+.theme-doc-markdown h2::after {
+    content: var(--h2-icon-shape);
+    display: inline-block;
+    width: 24px; height: 24px;
+    margin-left: 8px;
+    vertical-align: middle;
+}
+
+.theme-doc-markdown h3::after { content: var(--h3-icon-shape); display: inline-block; width: 24px; height: 24px; margin-left: 8px; vertical-align: middle; }
+.theme-doc-markdown h4::after { content: var(--h4-icon-shape); display: inline-block; width: 24px; height: 24px; margin-left: 8px; vertical-align: middle; }
+.theme-doc-markdown h5::after { content: var(--h5-icon-shape); display: inline-block; width: 24px; height: 24px; margin-left: 8px; vertical-align: middle; }
+.theme-doc-markdown h6::after { content: var(--h6-icon-shape); display: inline-block; width: 24px; height: 24px; margin-left: 8px; vertical-align: middle; }
+
+.theme-doc-markdown p, .theme-doc-markdown li {
+    color: var(--text-color);
+}
+
+
