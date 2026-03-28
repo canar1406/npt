@@ -1,6 +1,6 @@
-/* @import url(./phycat/phycat.dark.css); */
+@import url(./phycat/phycat.dark.css);
 
-:root {
+html[data-theme='dark'] {
   /* 标题后小图标，借鉴自思源笔记主题——Savor */
   --h1-icon-shape: url("data:image/svg+xml;utf8,<svg fill='rgba(255, 176, 176, 0.5)' height='24' viewBox='0 0 32 32' width='24' xmlns='http://www.w3.org/2000/svg'><path d='M4.8 29.714v0c-1.371 0-2.514-1.143-2.514-2.514v0c0-1.371 1.143-2.514 2.514-2.514v0c1.371 0 2.514 1.143 2.514 2.514v0c0.114 1.371-1.029 2.514-2.514 2.514z'/></svg>") no-repeat center;
   --h2-icon-shape: url("data:image/svg+xml;utf8,<svg fill='rgba(255, 176, 176, 0.5)' height='24' viewBox='0 0 32 32' width='24' xmlns='http://www.w3.org/2000/svg'><path d='M11.429 25.143c-1.257 0-2.286 1.029-2.286 2.286s1.029 2.286 2.286 2.286 2.286-1.029 2.286-2.286-1.029-2.286-2.286-2.286zM4.571 18.286c-1.257 0-2.286 1.029-2.286 2.286s1.029 2.286 2.286 2.286 2.286-1.029 2.286-2.286-1.029-2.286-2.286-2.286z'/></svg>") no-repeat center;
@@ -121,13 +121,13 @@
 }
 
 /* Đổi tiêu đề TOC từ tiếng Trung sang tiếng Việt */
-.md-toc::before,
-.md-toc-content::before {
+html[data-theme='dark'] .md-toc::before,
+html[data-theme='dark'] .md-toc-content::before {
     content: "Mục lục" !important;
 }
 
 /* Tạo khung viền và đổ bóng cho khối Mục lục (TOC) */
-.md-toc {
+html[data-theme='dark'] .md-toc {
     border: 2px solid var(--element-color-shallow); /* Dùng màu viền xanh nhạt của theme */
     border-radius: 12px; /* Bo tròn các góc cho mềm mại */
     padding: 25px 30px; /* Tạo khoảng trống giữa chữ và khung viền */
@@ -136,16 +136,16 @@
 }
 
 /* (Tùy chọn) Ẩn đường gạch ngang đứt nét dưới chữ Mục lục nếu bạn thấy nó bị thừa khi đã có khung */
-.md-toc:after {
+html[data-theme='dark'] .md-toc:after {
     display: none !important;
 }
 
 /* Nút bấm chuyển trang (Bắt chết mọi link chuyển đề) */
-.markdown a[href="thpt.md"], 
-.markdown a[href="thpt.html"],
-.markdown a[href="index.html"],
-.markdown a[href="thcs.md"],
-.markdown a[href="thcs.html"] {
+html[data-theme='dark'] .markdown a[href="thpt.md"], 
+html[data-theme='dark'] .markdown a[href="thpt.html"],
+html[data-theme='dark'] .markdown a[href="index.html"],
+html[data-theme='dark'] .markdown a[href="thcs.md"],
+html[data-theme='dark'] .markdown a[href="thcs.html"] {
     display: inline-block !important;
     background-color: #11aa63 !important; 
     color: #ffffff !important; 
@@ -158,11 +158,11 @@
     transition: all 0.3s ease !important; 
 }
 
-.markdown a[href="thpt.md"]:hover, 
-.markdown a[href="thpt.html"]:hover,
-.markdown a[href="index.html"]:hover,
-.markdown a[href="thcs.md"]:hover,
-.markdown a[href="thcs.html"]:hover {
+html[data-theme='dark'] .markdown a[href="thpt.md"]:hover, 
+html[data-theme='dark'] .markdown a[href="thpt.html"]:hover,
+html[data-theme='dark'] .markdown a[href="index.html"]:hover,
+html[data-theme='dark'] .markdown a[href="thcs.md"]:hover,
+html[data-theme='dark'] .markdown a[href="thcs.html"]:hover {
     background-color: #008145 !important; 
     box-shadow: 0 6px 16px rgba(0, 129, 69, 0.4) !important;
     transform: translateY(-3px) !important; 
