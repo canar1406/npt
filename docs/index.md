@@ -1,5 +1,6 @@
 ---
 sidebar_position: 1
+sidebar_label: 'Trang chủ'
 ---
 
 # Chào mừng đến với Toán Học Học Thuật
@@ -16,22 +17,22 @@ Toán học không chỉ là một môn học mà còn là ngôn ngữ của vũ
 
 ## Cấu trúc nội dung
 
-### 🔢 Đại số
+###  Đại số
 - Đại số tuyến tính
 - Đại số trừu tượng
 - Lý thuyết số
 
-### 📐 Hình học
+###  Hình học
 - Hình học Euclid
 - Hình học vi phân
 - Topology
 
-### 📊 Giải tích
+###  Giải tích
 - Giải tích toán học
 - Giải tích phức
 - Phương trình vi phân
 
-### 🧮 Toán ứng dụng
+###  Toán ứng dụng
 - Thống kê và xác suất
 - Toán rời rạc
 - Phương pháp số
@@ -47,10 +48,10 @@ Toán học không chỉ là một môn học mà còn là ngôn ngữ của vũ
 
 ## Tại sao chọn chúng tôi?
 
-- ✅ **Nội dung chính xác**: Được biên soạn bởi các chuyên gia
-- ✅ **Cập nhật liên tục**: Theo kịp các nghiên cứu mới nhất
-- ✅ **Dễ hiểu**: Giải thích rõ ràng với nhiều ví dụ
-- ✅ **Miễn phí**: Tất cả kiến thức đều được chia sẻ miễn phí
+-  **Nội dung chính xác**: Được biên soạn bởi các chuyên gia
+-  **Cập nhật liên tục**: Theo kịp các nghiên cứu mới nhất
+-  **Dễ hiểu**: Giải thích rõ ràng với nhiều ví dụ
+-  **Miễn phí**: Tất cả kiến thức đều được chia sẻ miễn phí
 
 ---
 

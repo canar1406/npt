@@ -141,11 +141,11 @@ html[data-theme='dark'] .md-toc:after {
 }
 
 /* Nút bấm chuyển trang (Bắt chết mọi link chuyển đề) */
-html[data-theme='dark'] .theme-doc-markdown a[href="thpt.md"], 
-html[data-theme='dark'] .theme-doc-markdown a[href="thpt.html"],
-html[data-theme='dark'] .theme-doc-markdown a[href="index.html"],
-html[data-theme='dark'] .theme-doc-markdown a[href="thcs.md"],
-html[data-theme='dark'] .theme-doc-markdown a[href="thcs.html"] {
+html[data-theme='dark'] .markdown a[href="thpt.md"], 
+html[data-theme='dark'] .markdown a[href="thpt.html"],
+html[data-theme='dark'] .markdown a[href="index.html"],
+html[data-theme='dark'] .markdown a[href="thcs.md"],
+html[data-theme='dark'] .markdown a[href="thcs.html"] {
     display: inline-block !important;
     background-color: #11aa63 !important; 
     color: #ffffff !important; 
@@ -158,11 +158,11 @@ html[data-theme='dark'] .theme-doc-markdown a[href="thcs.html"] {
     transition: all 0.3s ease !important; 
 }
 
-html[data-theme='dark'] .theme-doc-markdown a[href="thpt.md"]:hover, 
-html[data-theme='dark'] .theme-doc-markdown a[href="thpt.html"]:hover,
-html[data-theme='dark'] .theme-doc-markdown a[href="index.html"]:hover,
-html[data-theme='dark'] .theme-doc-markdown a[href="thcs.md"]:hover,
-html[data-theme='dark'] .theme-doc-markdown a[href="thcs.html"]:hover {
+html[data-theme='dark'] .markdown a[href="thpt.md"]:hover, 
+html[data-theme='dark'] .markdown a[href="thpt.html"]:hover,
+html[data-theme='dark'] .markdown a[href="index.html"]:hover,
+html[data-theme='dark'] .markdown a[href="thcs.md"]:hover,
+html[data-theme='dark'] .markdown a[href="thcs.html"]:hover {
     background-color: #008145 !important; 
     box-shadow: 0 6px 16px rgba(0, 129, 69, 0.4) !important;
     transform: translateY(-3px) !important; 

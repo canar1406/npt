@@ -516,17 +516,17 @@ html {
     --ifm-code-background: var(--code-block-bg);
 }
 
-.theme-doc-markdown {
+.markdown {
     max-width: var(--max-width) !important;
     margin: 0 auto;
 }
 
-.theme-doc-markdown h1 {
+.markdown h1 {
     color: var(--h1-color);
     border-bottom: 2px solid var(--h1-underline-color);
     padding-bottom: 8px;
 }
-.theme-doc-markdown h1::after {
+.markdown h1::after {
     content: var(--h1-icon-shape);
     display: inline-block;
     width: 24px; height: 24px;
@@ -534,20 +534,20 @@ html {
     vertical-align: middle;
 }
 
-html[data-theme='dark'] .theme-doc-markdown h2 {
+html[data-theme='dark'] .markdown h2 {
     background: var(--h2-bg-image) !important;
     background-color: rgba(255, 255, 255, .02) !important;
     padding: 5px 12px !important;
     border-radius: 8px !important;
 }
 
-html[data-theme='light'] .theme-doc-markdown h2 {
+html[data-theme='light'] .markdown h2 {
     background: var(--head-title-h2-background) !important;
     background-size: 200% auto !important;
     padding: 5px 12px !important;
     border-radius: 8px !important;
 }
-.theme-doc-markdown h2::after {
+.markdown h2::after {
     content: var(--h2-icon-shape);
     display: inline-block;
     width: 24px; height: 24px;
@@ -555,24 +555,24 @@ html[data-theme='light'] .theme-doc-markdown h2 {
     vertical-align: middle;
 }
 
-.theme-doc-markdown h3::after { content: var(--h3-icon-shape); display: inline-block; width: 24px; height: 24px; margin-left: 8px; vertical-align: middle; }
-.theme-doc-markdown h4::after { content: var(--h4-icon-shape); display: inline-block; width: 24px; height: 24px; margin-left: 8px; vertical-align: middle; }
-.theme-doc-markdown h5::after { content: var(--h5-icon-shape); display: inline-block; width: 24px; height: 24px; margin-left: 8px; vertical-align: middle; }
-.theme-doc-markdown h6::after { content: var(--h6-icon-shape); display: inline-block; width: 24px; height: 24px; margin-left: 8px; vertical-align: middle; }
+.markdown h3::after { content: var(--h3-icon-shape); display: inline-block; width: 24px; height: 24px; margin-left: 8px; vertical-align: middle; }
+.markdown h4::after { content: var(--h4-icon-shape); display: inline-block; width: 24px; height: 24px; margin-left: 8px; vertical-align: middle; }
+.markdown h5::after { content: var(--h5-icon-shape); display: inline-block; width: 24px; height: 24px; margin-left: 8px; vertical-align: middle; }
+.markdown h6::after { content: var(--h6-icon-shape); display: inline-block; width: 24px; height: 24px; margin-left: 8px; vertical-align: middle; }
 
-.theme-doc-markdown p, .theme-doc-markdown li {
+.markdown p, .markdown li {
     color: var(--text-color);
 }
 
 
 /* T?O �U?NG K? D?C CHO LIST ITEMS TRONG MULTI-LINE TREE LIST */
-html[data-theme='dark'] .theme-doc-markdown li,
-html[data-theme='light'] .theme-doc-markdown li {
+html[data-theme='dark'] .markdown li,
+html[data-theme='light'] .markdown li {
     position: relative;
 }
 
-html[data-theme='dark'] .theme-doc-markdown li::before,
-html[data-theme='light'] .theme-doc-markdown li::before {
+html[data-theme='dark'] .markdown li::before,
+html[data-theme='light'] .markdown li::before {
     content: '' !important;
     display: block !important;
     position: absolute !important;
@@ -601,8 +601,8 @@ html[data-theme='light'] .theme-doc-markdown li::before {
 /* FIX �?C TR?: Khi List Item c� ch?a ngo?c vu�ng/ma tr?n (mtable) l�m d?y line-height l�n cao
    -> V? tr� c?a d?u ch?m (bullet) b? d?y xu?ng du?i Bounding Box.
    -> K�o d�i v�ng t�ng h�nh (transparent) xu?ng 3.8em d? b?o v? d?u ch?m kh?i b? d�m xuy�n */
-html[data-theme='dark'] .theme-doc-markdown li:has(.katex .mtable)::before,
-html[data-theme='light'] .theme-doc-markdown li:has(.katex .mtable)::before {
+html[data-theme='dark'] .markdown li:has(.katex .mtable)::before,
+html[data-theme='light'] .markdown li:has(.katex .mtable)::before {
     background: linear-gradient(
         to bottom,
         transparent 0,
@@ -616,8 +616,8 @@ html[data-theme='light'] .theme-doc-markdown li:has(.katex .mtable)::before {
 }
 
 /* T?t g?ch d?c ho�n to�n v?i c�c list t? d�nh d?u no-line */
-html[data-theme='dark'] .theme-doc-markdown li.no-line::before,
-html[data-theme='light'] .theme-doc-markdown li.no-line::before {
+html[data-theme='dark'] .markdown li.no-line::before,
+html[data-theme='light'] .markdown li.no-line::before {
     display: none !important;
 }
 
@@ -629,16 +629,16 @@ html[data-theme='light'] .theme-doc-markdown li.no-line::before {
 
 /* 1. S?A L?I HASH-LINK (Icon # c?a Docusaurus) TR�N C�C HEADING */
 /* T?t c�c pseudo-class r�c c?a Typora (xoay, d?i m�u bg) khi hover v�o th? <a> hash-link */
-html[data-theme='dark'] .theme-doc-markdown a.hash-link::before,
-html[data-theme='light'] .theme-doc-markdown a.hash-link::before {
+html[data-theme='dark'] .markdown a.hash-link::before,
+html[data-theme='light'] .markdown a.hash-link::before {
     content: none !important;
     display: none !important;
     background: none !important;
     transform: none !important;
 }
 
-html[data-theme='dark'] .theme-doc-markdown a.hash-link,
-html[data-theme='light'] .theme-doc-markdown a.hash-link {
+html[data-theme='dark'] .markdown a.hash-link,
+html[data-theme='light'] .markdown a.hash-link {
     display: inline-block !important;
     margin-left: 8px !important;
     opacity: 0;
@@ -648,24 +648,24 @@ html[data-theme='light'] .theme-doc-markdown a.hash-link {
     background: transparent !important;
 }
 
-html[data-theme='dark'] .theme-doc-markdown h1:hover a.hash-link,
-html[data-theme='dark'] .theme-doc-markdown h2:hover a.hash-link,
-html[data-theme='dark'] .theme-doc-markdown h3:hover a.hash-link,
-html[data-theme='dark'] .theme-doc-markdown h4:hover a.hash-link,
-html[data-theme='dark'] .theme-doc-markdown h5:hover a.hash-link,
-html[data-theme='dark'] .theme-doc-markdown h6:hover a.hash-link,
-html[data-theme='light'] .theme-doc-markdown h1:hover a.hash-link,
-html[data-theme='light'] .theme-doc-markdown h2:hover a.hash-link,
-html[data-theme='light'] .theme-doc-markdown h3:hover a.hash-link,
-html[data-theme='light'] .theme-doc-markdown h4:hover a.hash-link,
-html[data-theme='light'] .theme-doc-markdown h5:hover a.hash-link,
-html[data-theme='light'] .theme-doc-markdown h6:hover a.hash-link {
+html[data-theme='dark'] .markdown h1:hover a.hash-link,
+html[data-theme='dark'] .markdown h2:hover a.hash-link,
+html[data-theme='dark'] .markdown h3:hover a.hash-link,
+html[data-theme='dark'] .markdown h4:hover a.hash-link,
+html[data-theme='dark'] .markdown h5:hover a.hash-link,
+html[data-theme='dark'] .markdown h6:hover a.hash-link,
+html[data-theme='light'] .markdown h1:hover a.hash-link,
+html[data-theme='light'] .markdown h2:hover a.hash-link,
+html[data-theme='light'] .markdown h3:hover a.hash-link,
+html[data-theme='light'] .markdown h4:hover a.hash-link,
+html[data-theme='light'] .markdown h5:hover a.hash-link,
+html[data-theme='light'] .markdown h6:hover a.hash-link {
     opacity: 1 !important;
 }
 
 /* 2. S?A L?I B?NG (M?t khung, v? vi?n, th� c?ng do Docusaurus ghi d�) */
-html[data-theme='dark'] .theme-doc-markdown table,
-html[data-theme='light'] .theme-doc-markdown table {
+html[data-theme='dark'] .markdown table,
+html[data-theme='light'] .markdown table {
     display: table !important;
     border-collapse: separate !important;
     border-spacing: 0 !important;
@@ -676,49 +676,49 @@ html[data-theme='light'] .theme-doc-markdown table {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05) !important;
 }
 
-html[data-theme='light'] .theme-doc-markdown table {
+html[data-theme='light'] .markdown table {
     border: 1px solid var(--element-color-shallow, #e0e0e0) !important;
 }
-html[data-theme='dark'] .theme-doc-markdown table {
+html[data-theme='dark'] .markdown table {
     border: 1px solid color-mix(in srgb, var(--primary-color), transparent 80%) !important;
 }
 
-html[data-theme='dark'] .theme-doc-markdown table th,
-html[data-theme='light'] .theme-doc-markdown table th,
-html[data-theme='dark'] .theme-doc-markdown table td,
-html[data-theme='light'] .theme-doc-markdown table td {
+html[data-theme='dark'] .markdown table th,
+html[data-theme='light'] .markdown table th,
+html[data-theme='dark'] .markdown table td,
+html[data-theme='light'] .markdown table td {
     padding: 10px 15px !important;
 }
 
-html[data-theme='light'] .theme-doc-markdown table th {
+html[data-theme='light'] .markdown table th {
     background-color: var(--element-color-soo-shallow, #f7f9fa) !important;
     color: var(--element-color-deep, #333) !important;
     border-bottom: 1px solid var(--element-color-shallow, #e0e0e0) !important;
 }
-html[data-theme='dark'] .theme-doc-markdown table th {
+html[data-theme='dark'] .markdown table th {
     background-color: color-mix(in srgb, var(--primary-color), transparent 90%) !important;
     color: var(--primary-color) !important;
     border-bottom: 1px solid color-mix(in srgb, var(--primary-color), transparent 80%) !important;
 }
 
 /* Vi?n ph�n c�ch c�c d�ng/c?t b�n trong */
-html[data-theme='light'] .theme-doc-markdown table td {
+html[data-theme='light'] .markdown table td {
     border-right: 1px solid #f0f0f0 !important;
     border-bottom: 1px solid #f0f0f0 !important;
 }
-html[data-theme='dark'] .theme-doc-markdown table td {
+html[data-theme='dark'] .markdown table td {
     border-right: 1px solid color-mix(in srgb, #fff, transparent 95%) !important;
     border-bottom: 1px solid color-mix(in srgb, var(--primary-color), transparent 85%) !important;
 }
 /* B? vi?n c�c c?nh ngo�i c�ng d? l�m tr�n khung d?p hon */
-html[data-theme='dark'] .theme-doc-markdown table td:last-child,
-html[data-theme='light'] .theme-doc-markdown table td:last-child,
-html[data-theme='dark'] .theme-doc-markdown table th:last-child,
-html[data-theme='light'] .theme-doc-markdown table th:last-child {
+html[data-theme='dark'] .markdown table td:last-child,
+html[data-theme='light'] .markdown table td:last-child,
+html[data-theme='dark'] .markdown table th:last-child,
+html[data-theme='light'] .markdown table th:last-child {
     border-right: none !important;
 }
-html[data-theme='dark'] .theme-doc-markdown table tr:last-child td,
-html[data-theme='light'] .theme-doc-markdown table tr:last-child td {
+html[data-theme='dark'] .markdown table tr:last-child td,
+html[data-theme='light'] .markdown table tr:last-child td {
     border-bottom: none !important;
 }
 
@@ -726,8 +726,8 @@ html[data-theme='light'] .theme-doc-markdown table tr:last-child td {
 
 
 /* Disable Typora aggressive inline code hover */
-html[data-theme='light'] .theme-doc-markdown code:not(.md-fencescode):hover,
-html[data-theme='dark'] .theme-doc-markdown code:not(.md-fencescode):hover {
+html[data-theme='light'] .markdown code:not(.md-fencescode):hover,
+html[data-theme='dark'] .markdown code:not(.md-fencescode):hover {
     background-color: var(--ifm-code-background) !important;
     transform: none !important;
     color: inherit !important;
@@ -822,8 +822,8 @@ html .theme-code-block-highlighted-line { background-color: rgba(255,255,255,0.1
 /* =============================================================== */
 /* === SỬA LỖI INLINE CODE CỦA TYPORA ÁM LÊN CODE BLOCK ====== */
 /* =============================================================== */
-html[data-theme='dark'] .theme-doc-markdown pre code,
-html[data-theme='light'] .theme-doc-markdown pre code,
+html[data-theme='dark'] .markdown pre code,
+html[data-theme='light'] .markdown pre code,
 html .theme-code-block pre code {
     background-color: transparent !important;
     border: none !important;
@@ -837,8 +837,8 @@ html .theme-code-block pre code {
 /* =============================================================== */
 /* === SỬA LỖI INLINE CODE CỦA TYPORA ÁM LÊN CODE BLOCK (HOVER) == */
 /* =============================================================== */
-html[data-theme='dark'] .theme-doc-markdown pre code:hover,
-html[data-theme='light'] .theme-doc-markdown pre code:hover,
+html[data-theme='dark'] .markdown pre code:hover,
+html[data-theme='light'] .markdown pre code:hover,
 html[data-theme='dark'] .theme-code-block code:hover,
 html[data-theme='light'] .theme-code-block code:hover,
 html .theme-code-block:hover,
@@ -862,10 +862,10 @@ html[data-theme='light'] .theme-code-block:hover {
 /* =============================================================== */
 /* KILL TYPORA HOVER FOR DOCUSAURUS CODE BLOCKS (MAX SPECIFICITY)  */
 /* =============================================================== */
-html[data-theme='dark'] .theme-doc-markdown pre code:not(.md-fencescode):hover,
-html[data-theme='light'] .theme-doc-markdown pre code:not(.md-fencescode):hover,
-html[data-theme='dark'] .theme-doc-markdown .theme-code-block code:not(.md-fencescode):hover,
-html[data-theme='light'] .theme-doc-markdown .theme-code-block code:not(.md-fencescode):hover {
+html[data-theme='dark'] .markdown pre code:not(.md-fencescode):hover,
+html[data-theme='light'] .markdown pre code:not(.md-fencescode):hover,
+html[data-theme='dark'] .markdown .theme-code-block code:not(.md-fencescode):hover,
+html[data-theme='light'] .markdown .theme-code-block code:not(.md-fencescode):hover {
     background-color: transparent !important;
     transform: none !important;
     color: #f8f8f2 !important; /* light mode will be auto overridden by next rule or we can split */
@@ -874,8 +874,8 @@ html[data-theme='light'] .theme-doc-markdown .theme-code-block code:not(.md-fenc
     text-decoration: none !important;
 }
 
-html[data-theme='light'] .theme-doc-markdown .theme-code-block code:not(.md-fencescode):hover,
-html[data-theme='light'] .theme-doc-markdown pre code:not(.md-fencescode):hover {
+html[data-theme='light'] .markdown .theme-code-block code:not(.md-fencescode):hover,
+html[data-theme='light'] .markdown pre code:not(.md-fencescode):hover {
     color: #4f5467 !important;
 }
 
@@ -883,14 +883,14 @@ html[data-theme='light'] .theme-doc-markdown pre code:not(.md-fencescode):hover 
 /* === SỬA LỖI ICON HEADING (h3, h4, h5, h6) BỊ MẤT MÀU MẶC ĐỊNH MASK == */
 /* =============================================================== */
 
-html[data-theme='dark'] .theme-doc-markdown h3:after,
-html[data-theme='dark'] .theme-doc-markdown h4:after,
-html[data-theme='dark'] .theme-doc-markdown h5:after,
-html[data-theme='dark'] .theme-doc-markdown h6:after,
-html[data-theme='light'] .theme-doc-markdown h3:after,
-html[data-theme='light'] .theme-doc-markdown h4:after,
-html[data-theme='light'] .theme-doc-markdown h5:after,
-html[data-theme='light'] .theme-doc-markdown h6:after {
+html[data-theme='dark'] .markdown h3:after,
+html[data-theme='dark'] .markdown h4:after,
+html[data-theme='dark'] .markdown h5:after,
+html[data-theme='dark'] .markdown h6:after,
+html[data-theme='light'] .markdown h3:after,
+html[data-theme='light'] .markdown h4:after,
+html[data-theme='light'] .markdown h5:after,
+html[data-theme='light'] .markdown h6:after {
     content: '' !important;
     display: inline-block !important;
     height: 1.2em !important;
@@ -907,18 +907,18 @@ html[data-theme='light'] .theme-doc-markdown h6:after {
     transform: translateY(-1px);
 }
 
-html[data-theme='dark'] .theme-doc-markdown h4:after,
-html[data-theme='light'] .theme-doc-markdown h4:after {
+html[data-theme='dark'] .markdown h4:after,
+html[data-theme='light'] .markdown h4:after {
     -webkit-mask-image: var(--h4-icon-shape) !important;
     mask-image: var(--h4-icon-shape) !important;
 }
-html[data-theme='dark'] .theme-doc-markdown h5:after,
-html[data-theme='light'] .theme-doc-markdown h5:after {
+html[data-theme='dark'] .markdown h5:after,
+html[data-theme='light'] .markdown h5:after {
     -webkit-mask-image: var(--h5-icon-shape) !important;
     mask-image: var(--h5-icon-shape) !important;
 }
-html[data-theme='dark'] .theme-doc-markdown h6:after,
-html[data-theme='light'] .theme-doc-markdown h6:after {
+html[data-theme='dark'] .markdown h6:after,
+html[data-theme='light'] .markdown h6:after {
     -webkit-mask-image: var(--h6-icon-shape) !important;
     mask-image: var(--h6-icon-shape) !important;
 }
@@ -926,7 +926,7 @@ html[data-theme='light'] .theme-doc-markdown h6:after {
 /* =============================================================== */
 /* === SỬA LỖI KHỐI VUÔNG XANH TRÊN TRANG ABOUT (GLOBAL HEADING) == */
 /* =============================================================== */
-/* Do Typora khai báo h4:after, h5:after, h6:after mà quên không đi kèm .theme-doc-markdown */
+/* Do Typora khai báo h4:after, h5:after, h6:after mà quên không đi kèm .markdown */
 html body h1:after,
 html body h2:after,
 html body h3:after,
@@ -944,38 +944,38 @@ html body h6::before {
 }
 
 /* Kích hoạt lại cho đúng phạm vi bài viết Markdown (có tính đặc tả cao hơn nên sẽ thắng) */
-html[data-theme] .theme-doc-markdown h1:after,
-html[data-theme] .theme-doc-markdown h2:after,
-html[data-theme] .theme-doc-markdown h3:after,
-html[data-theme] .theme-doc-markdown h4:after,
-html[data-theme] .theme-doc-markdown h5:after,
-html[data-theme] .theme-doc-markdown h6:after {
+html[data-theme] .markdown h1:after,
+html[data-theme] .markdown h2:after,
+html[data-theme] .markdown h3:after,
+html[data-theme] .markdown h4:after,
+html[data-theme] .markdown h5:after,
+html[data-theme] .markdown h6:after {
     display: inline-block !important;
     content: '' !important;
 }
 
-html[data-theme] .theme-doc-markdown h1::before,
-html[data-theme] .theme-doc-markdown h2::before,
-html[data-theme] .theme-doc-markdown h3::before,
-html[data-theme] .theme-doc-markdown h4::before,
-html[data-theme] .theme-doc-markdown h5::before,
-html[data-theme] .theme-doc-markdown h6::before {
+html[data-theme] .markdown h1::before,
+html[data-theme] .markdown h2::before,
+html[data-theme] .markdown h3::before,
+html[data-theme] .markdown h4::before,
+html[data-theme] .markdown h5::before,
+html[data-theme] .markdown h6::before {
     display: inline-block !important;
     /* content: ""; sẽ được gán lại bởi Typora CSS phía dưới */
 }
-html[data-theme] .theme-doc-markdown h1::before,
-html[data-theme] .theme-doc-markdown h2::before,
-html[data-theme] .theme-doc-markdown h3::before,
-html[data-theme] .theme-doc-markdown h4::before,
-html[data-theme] .theme-doc-markdown h5::before,
-html[data-theme] .theme-doc-markdown h6::before {
+html[data-theme] .markdown h1::before,
+html[data-theme] .markdown h2::before,
+html[data-theme] .markdown h3::before,
+html[data-theme] .markdown h4::before,
+html[data-theme] .markdown h5::before,
+html[data-theme] .markdown h6::before {
     content: '' !important;
 }
-html[data-theme] .theme-doc-markdown h1::before,
-html[data-theme] .theme-doc-markdown h2::before,
-html[data-theme] .theme-doc-markdown h3::before,
-html[data-theme] .theme-doc-markdown h4::before,
-html[data-theme] .theme-doc-markdown h5::before,
-html[data-theme] .theme-doc-markdown h6::before {
+html[data-theme] .markdown h1::before,
+html[data-theme] .markdown h2::before,
+html[data-theme] .markdown h3::before,
+html[data-theme] .markdown h4::before,
+html[data-theme] .markdown h5::before,
+html[data-theme] .markdown h6::before {
     content: '' !important;
 }

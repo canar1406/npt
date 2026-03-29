@@ -22,6 +22,7 @@ Trang web tập trung tối đa vào trải nghiệm đọc (typography), khả 
   Cấu trúc CSS được tinh chỉnh sâu với 2 phong cách lấy cảm hứng từ bộ editor nổi tiếng Typora. **Đặc biệt, hệ thống được thiết lập [Dark Mode] làm chế độ mặc định** để xoa dịu đôi mắt cho các "cú đêm" học thuật:
   - **Tối (Dark Mode - Default):** Phycat-Abyss sâu thẳm, huyền bí.
   - **Sáng (Light Mode):** Phycat-Forest mát mẻ, trong trẻo.
+-  **Cấu trúc Sidebar thông minh (Auto-generated Sidebar):** Sidebar tự động vạch ra danh mục theo chuẩn cấu trúc cây thư mục hệ thống bên dưới mã nguồn (`02 - Toán THPT`, `03-Đại Số`, v.v.). Hệ thống sẽ lấy các tiền tố số để gán thứ tự ưu tiên (sort) trên màn hình một cách logic, nhưng tự động làm ẩn đi các số này khi hiển thị cho người xem, đảm bảo tính liền mạch và thẩm mỹ nhất. Chỉ việc tạo thư mục mới, thả file `.md` vào là web sẽ tự nối nhánh trên Menu Sidebar mà không cần khai báo code.
 -  **Hỗ trợ Toán học chuyên sâu:** Tích hợp bộ thư viện render **KaTeX** đỉnh cao, hoạt động hoàn hảo với các định dạng Inline, Block, Ma trận hay Phân số nhiều dòng mà không làm vỡ kiến trúc giao diện.
 -  **Tree-list thông minh (Danh sách cây):** Các cấu trúc List (danh sách) nhiều dòng có gắn thiết kế thanh nối nhánh dọc theo ý tưởng Layout Typora. Lập trình pure-CSS tự động nhận diện và khéo léo né tránh sự che lấp khi danh sách chứa các ma trận cồng kềnh.
 -  **Tìm kiếm thần tốc:** Tích hợp bộ máy tìm kiếm toàn văn **Algolia Search** thân thiện giúp tra thông tin chớp nhoáng.

@@ -25,7 +25,7 @@ function HomepageHeader() {
           <div className={styles.buttons}>
             <Link
               className={styles.ctaButton}
-              to="/docs/intro">
+              to="/docs/">
               🚀 Bắt Đầu Hành Trình - 5 phút ⏱️
             </Link>
           </div>

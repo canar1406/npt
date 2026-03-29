@@ -1,6 +1,6 @@
 # TỔNG ÔN - CSN - ĐỀ 03
 
-## Phần 1: Câu hỏi trắc nghiệm nhiều lựa chọn
+## Phần 1: Câu hỏi trắc nghiệm nhiều lựa chọn.
 
 **Câu 1:** Cho hàm số $y=f(x)$ có đạo hàm trên $\mathbb{R}$ thỏa mãn $f'(1)=3$. Khi đó $\displaystyle\lim_{x\to 1}\dfrac{f(x)-f(1)}{1-x}$ bằng
 

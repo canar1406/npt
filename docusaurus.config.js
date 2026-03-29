@@ -179,7 +179,7 @@ const config = {
             items: [
               {
                 label: 'Kiến Thức',
-                to: '/docs/intro',
+                to: '/docs/',
               },
             ],
           },
