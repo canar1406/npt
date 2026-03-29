@@ -160,6 +160,11 @@ const config = {
             label: 'Kiến thức',
           },
           {
+            to: '/blog', 
+            label: 'Blog', 
+            position: 'left'
+          },
+          {
             to: '/about',
             position: 'left',
             label: 'About me',
