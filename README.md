@@ -73,4 +73,37 @@ npm run build
 
 ---
 
+## ⚠️ Lưu ý khi viết bài (Tránh lỗi Build MDX)
+
+Docusaurus sử dụng MDX (Markdown + React JSX), do đó khi chèn mã HTML vào bài viết, bắt buộc tuân thủ 3 quy tắc sau để tránh lỗi sập web khi build:
+
+### 1. Phải luôn đóng các thẻ HTML rỗng (Self-closing tags)
+Mọi thẻ HTML không có nội dung bên trong đều **bắt buộc phải có dấu gạch chéo `/` ở cuối**.
+* ❌ **Sai:** `<img src="image.jpg" alt="Hình ảnh">`
+* ✅ **Đúng:** `<img src="image.jpg" alt="Hình ảnh" />`
+* ❌ **Sai:** `<br>` hoặc `<hr>`
+* ✅ **Đúng:** `<br />` hoặc `<hr />`
+
+### 2. Thuộc tính `style` phải viết theo chuẩn của React (JSX Object)
+Không dùng chuỗi string để định dạng style. Phải viết dưới dạng Object `{{ ... }}` và các thuộc tính CSS có chứa dấu gạch ngang (như `text-align`, `max-width`) phải chuyển sang dạng **camelCase** (`textAlign`, `maxWidth`).
+* ❌ **Sai:** `<div style="text-align: center; max-width: 100%;">`
+* ✅ **Đúng:** `<div style={{ textAlign: "center", maxWidth: "100%" }}>`
+
+### 3. Khoảng trắng và dấu `>` trong Blockquote
+Khi lồng các đoạn code HTML/JSX vào trong cặp dấu trích dẫn (Blockquote `>`), hãy cẩn thận kẻo bị đứt gãy dòng. Tất cả các dòng (kể cả dòng trống giữa các thẻ HTML) đều nên bắt đầu bằng dấu `>`.
+* ❌ **Sai:** 
+  ```markdown
+  > <div>
+    <img src="..." />
+  > </div>
+  ```
+* ✅ **Đúng:** 
+  ```markdown
+  > <div>
+  >    <img src="..." />
+  > </div>
+  ```
+
+---
+
 <p align="center"><i>Dự án "Tiểu sảnh nhỏ xíu của Arust" - Xây dựng với tất cả sự tận tâm dành cho Toán học và Thẩm mỹ.</i></p>
